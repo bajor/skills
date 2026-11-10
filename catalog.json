@@ -1,0 +1,1331 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "name": "architect",
+      "original_name": "architect",
+      "path": "skills/architect",
+      "sha256": "c028e9c105200d8d1d6a85f844cc0ff4f8229fea1f521a1c0065c34f179865f3",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/architect",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "arena",
+      "original_name": "arena",
+      "path": "skills/arena",
+      "sha256": "38ed65772178d696bd93c58cbba792298bb5f73865a6d0d98731fc14261615a2",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/arena",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "automate-me",
+      "original_name": "automate-me",
+      "path": "skills/automate-me",
+      "sha256": "47557fd31e309bc473ef1da3cad099f64d5026f21a71ea79c98b4f6ceaf095a5",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/automate-me",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "benchmark-checklist",
+      "original_name": "benchmark-checklist",
+      "path": "skills/benchmark-checklist",
+      "sha256": "77f6adce1b8785c7e26d762992365b466d3e7d09d61edbd670f2bceccf649146",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/benchmark-checklist",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "blast-radius",
+      "original_name": "blast-radius",
+      "path": "skills/blast-radius",
+      "sha256": "b7a89ce84164a9900d6f6a52e82cc5eb070bb08e0648bdb16d967a130c19e167",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/blast-radius",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "brainstorming",
+      "original_name": "brainstorming",
+      "path": "skills/brainstorming",
+      "sha256": "c832367721022fd2cfabf25b9b45ce3514f52fd643f26a0e4ee7d20c218bdeed",
+      "sources": [
+        {
+          "name": "codex",
+          "path": ".codex/skills/brainstorming",
+          "origin": "local:/home/ubuntu/.codex/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "bro",
+      "original_name": "bro",
+      "path": "skills/bro",
+      "sha256": "a333dd2281770dcc9fb2317b066bd0dbefd780aa9abfd6b19f7d31db3ad3f007",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/bro",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "claude-statechart",
+      "original_name": "statechart",
+      "path": "skills/claude-statechart",
+      "sha256": "9c7d9289a592eda0dbd7854a3db08895ade57e91d66178431a59c009c536ab15",
+      "sources": [
+        {
+          "name": "claude",
+          "path": ".claude/skills/statechart",
+          "origin": "local:/home/ubuntu/.claude/skills",
+          "revision": null
+        },
+        {
+          "name": "codex",
+          "path": ".codex/skills/statechart",
+          "origin": "local:/home/ubuntu/.codex/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "correct",
+      "original_name": "correct",
+      "path": "skills/correct",
+      "sha256": "e86f41b862349cc7019815c374a21074e3e2087618cf0fe8f2f869059f4d9937",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/correct",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "create-formal-verification-skill",
+      "original_name": "create-formal-verification-skill",
+      "path": "skills/create-formal-verification-skill",
+      "sha256": "ac374f21de2ea831366fccdc114a9d55afa88fa86c6980f069d54a381d2aaacf",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/create-formal-verification-skill",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "create-verification-skill",
+      "original_name": "create-verification-skill",
+      "path": "skills/create-verification-skill",
+      "sha256": "3ed20edba215f42392aa14cfaff19a40f0830f0f1abe1b1b6e62b7cfcfbfe1cd",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/create-verification-skill",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "deslopify-notes",
+      "original_name": "deslopify-notes",
+      "path": "skills/deslopify-notes",
+      "sha256": "c43cf42d86f0a6e536569eefc85299e56d1ed372b4c995ab3e459f16d8df3893",
+      "sources": [
+        {
+          "name": "tools-configs",
+          "path": "skills/deslopify-notes",
+          "origin": "https://github.com/bajor/tools-configs",
+          "revision": "b6f86623807c1d4e63a33f0f4d81f4a9a526ea93"
+        },
+        {
+          "name": "claude",
+          "path": ".claude/skills/deslopify-notes",
+          "origin": "local:/home/ubuntu/.claude/skills",
+          "revision": null
+        },
+        {
+          "name": "codex",
+          "path": ".codex/skills/deslopify-notes",
+          "origin": "local:/home/ubuntu/.codex/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "figure-it-out",
+      "original_name": "figure-it-out",
+      "path": "skills/figure-it-out",
+      "sha256": "e0b8daee7524f146866616d66eb82e3321595a083a06ce809d86f28faec66934",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/figure-it-out",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "gmail-artifact-delivery",
+      "original_name": "gmail-artifact-delivery",
+      "path": "skills/gmail-artifact-delivery",
+      "sha256": "1e34b6e610fa703300dc22f241727808acd982ceacede5ff1f52a9107cfab3f0",
+      "sources": [
+        {
+          "name": "tools-configs",
+          "path": "skills/gmail-artifact-delivery",
+          "origin": "https://github.com/bajor/tools-configs",
+          "revision": "b6f86623807c1d4e63a33f0f4d81f4a9a526ea93"
+        },
+        {
+          "name": "claude",
+          "path": ".claude/skills/gmail-artifact-delivery",
+          "origin": "local:/home/ubuntu/.claude/skills",
+          "revision": null
+        },
+        {
+          "name": "codex",
+          "path": ".codex/skills/gmail-artifact-delivery",
+          "origin": "local:/home/ubuntu/.codex/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "grill-me",
+      "original_name": "grill-me",
+      "path": "skills/grill-me",
+      "sha256": "0fe30e2291a6f990a5414f85205535bc06519622bf604980511d7c11dad327e0",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/grill-me",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        },
+        {
+          "name": "claude",
+          "path": ".claude/skills/grill-me",
+          "origin": "local:/home/ubuntu/.claude/skills",
+          "revision": null
+        },
+        {
+          "name": "codex",
+          "path": ".codex/skills/grill-me",
+          "origin": "local:/home/ubuntu/.codex/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "gym-training-log",
+      "original_name": "gym-training-log",
+      "path": "skills/gym-training-log",
+      "sha256": "fd439cabdd552d9712d243dd8a1160b50c5340f8d0228cff5958b788bc77201f",
+      "sources": [
+        {
+          "name": "tools-configs",
+          "path": "skills/gym-training-log",
+          "origin": "https://github.com/bajor/tools-configs",
+          "revision": "b6f86623807c1d4e63a33f0f4d81f4a9a526ea93"
+        },
+        {
+          "name": "claude",
+          "path": ".claude/skills/gym-training-log",
+          "origin": "local:/home/ubuntu/.claude/skills",
+          "revision": null
+        },
+        {
+          "name": "codex",
+          "path": ".codex/skills/gym-training-log",
+          "origin": "local:/home/ubuntu/.codex/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "how",
+      "original_name": "how",
+      "path": "skills/how",
+      "sha256": "c85e69d22f1a5e8a482ec69daf7063f452058a7427fa3f9fc8b3fb0034018251",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/how",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "in-your-own-words",
+      "original_name": "in-your-own-words",
+      "path": "skills/in-your-own-words",
+      "sha256": "49d983cb552ece1cc4b6a8e16f48dc90611f3c1a2d834507ec48fa80f30fa044",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/in-your-own-words",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "insert-mermaid-diagrams",
+      "original_name": "insert-mermaid-diagrams",
+      "path": "skills/insert-mermaid-diagrams",
+      "sha256": "f703b5b8a0d25ab27a2003adf9cb593609eb3a5ff4cd9395f7b12d2ff5e30222",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/insert-mermaid-diagrams",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "interrogate",
+      "original_name": "interrogate",
+      "path": "skills/interrogate",
+      "sha256": "aa6c805b108cfdd38d730a9ac4e369957687dfd767669f6673735be358567fcb",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/interrogate",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "ketchup",
+      "original_name": "ketchup",
+      "path": "skills/ketchup",
+      "sha256": "4744c478dc1be751f0c47a67e38161dff739b340ea564be51f0176713ed8d740",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/ketchup",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "ketchup-video",
+      "original_name": "ketchup-video",
+      "path": "skills/ketchup-video",
+      "sha256": "c7a76236bfa1f7cd1b8d87e5c2bb8e08f8ba02e1c2aa4900c4e8cbc57a962bf4",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/ketchup-video",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "large-work-wrap-up",
+      "original_name": "large-work-wrap-up",
+      "path": "skills/large-work-wrap-up",
+      "sha256": "8292e7bd3541489e49e1bebc735b0c3e4d301851ae4e69790d7ddd2dbf0ca119",
+      "sources": [
+        {
+          "name": "tools-configs",
+          "path": "skills/large-work-wrap-up",
+          "origin": "https://github.com/bajor/tools-configs",
+          "revision": "b6f86623807c1d4e63a33f0f4d81f4a9a526ea93"
+        },
+        {
+          "name": "claude",
+          "path": ".claude/skills/large-work-wrap-up",
+          "origin": "local:/home/ubuntu/.claude/skills",
+          "revision": null
+        },
+        {
+          "name": "codex",
+          "path": ".codex/skills/large-work-wrap-up",
+          "origin": "local:/home/ubuntu/.codex/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "leetcode-next-problem",
+      "original_name": "leetcode-next-problem",
+      "path": "skills/leetcode-next-problem",
+      "sha256": "dba7d85390300d68055969c2fdfbefc2a8136681218e17650f76ca5cc1362864",
+      "sources": [
+        {
+          "name": "claude",
+          "path": ".claude/skills/leetcode-next-problem",
+          "origin": "local:/home/ubuntu/.claude/skills",
+          "revision": null
+        },
+        {
+          "name": "codex",
+          "path": ".codex/skills/leetcode-next-problem",
+          "origin": "local:/home/ubuntu/.codex/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "living-docs",
+      "original_name": "living-docs",
+      "path": "skills/living-docs",
+      "sha256": "9f8c8200b11230d1f51bf3c6846112db8bfb5acbb96acfe34c83092d1ef39dc4",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/living-docs",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "maintain-formal-verification-skill",
+      "original_name": "maintain-formal-verification-skill",
+      "path": "skills/maintain-formal-verification-skill",
+      "sha256": "935e55c6161e3b7988e3e49ecf4f17248e124f595cc7d626b398577317a6a8ed",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/maintain-formal-verification-skill",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "maintain-verification-skill",
+      "original_name": "maintain-verification-skill",
+      "path": "skills/maintain-verification-skill",
+      "sha256": "b4e67f06ad8fc70b269a7829f3c0f59ee425559b9c7447bfd0af0319828192d8",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/maintain-verification-skill",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "make-bot-ui",
+      "original_name": "make-bot-ui",
+      "path": "skills/make-bot-ui",
+      "sha256": "32020fd5b3f968d997aa3c4f7b979ae7bc41ba01958ccb93c9a386cf45c7499c",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/make-bot-ui",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "no-comments",
+      "original_name": "no-comments",
+      "path": "skills/no-comments",
+      "sha256": "5f4168c187a0a4ee56bd1efec81000ae107f6fea6de70598f7832480cbf76aea",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/no-comments",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "note-review",
+      "original_name": "note-review",
+      "path": "skills/note-review",
+      "sha256": "a195da4693586c59c93880bfb43947dfadc7c3fd823b40940e83934ada14311f",
+      "sources": [
+        {
+          "name": "tools-configs",
+          "path": "skills/note-review",
+          "origin": "https://github.com/bajor/tools-configs",
+          "revision": "b6f86623807c1d4e63a33f0f4d81f4a9a526ea93"
+        },
+        {
+          "name": "claude",
+          "path": ".claude/skills/note-review",
+          "origin": "local:/home/ubuntu/.claude/skills",
+          "revision": null
+        },
+        {
+          "name": "codex",
+          "path": ".codex/skills/note-review",
+          "origin": "local:/home/ubuntu/.codex/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "obsidian-markdown",
+      "original_name": "obsidian-markdown",
+      "path": "skills/obsidian-markdown",
+      "sha256": "dd1f743ff755f0b472ec73b4f1f451342f149b58d8556fb07874665ce988368c",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/obsidian-markdown",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "okf-knowledge-format",
+      "original_name": "okf-knowledge-format",
+      "path": "skills/okf-knowledge-format",
+      "sha256": "0e3f32fdef2068e59863036f51d2bc297e6266ed6f71ecf7ada0186bb4d9f96f",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/okf-knowledge-format",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "poteto-help",
+      "original_name": "poteto-help",
+      "path": "skills/poteto-help",
+      "sha256": "657a040b9e3bd7a385058976aee051c70279cf22ca4f2c1fbd759b57db8bcfac",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/poteto-help",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "poteto-mode",
+      "original_name": "poteto-mode",
+      "path": "skills/poteto-mode",
+      "sha256": "f0df3b0fc18ea8c7790e7215d48ed12c277435485ec7be775c902afb727e7df6",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/poteto-mode",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "pr-diagram",
+      "original_name": "pr-diagram",
+      "path": "skills/pr-diagram",
+      "sha256": "71031bb4060f20b7c65aac46182df4c92222ae2da65dc329638b6cfded05b348",
+      "sources": [
+        {
+          "name": "tools-configs",
+          "path": "skills/pr-diagram",
+          "origin": "https://github.com/bajor/tools-configs",
+          "revision": "b6f86623807c1d4e63a33f0f4d81f4a9a526ea93"
+        }
+      ]
+    },
+    {
+      "name": "principle-attack-the-premise",
+      "original_name": "principle-attack-the-premise",
+      "path": "skills/principle-attack-the-premise",
+      "sha256": "c61a6fabdec7954f4c5565056e659f8947d4a1f6ea29161f973e5d95c2359b0a",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-attack-the-premise",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-boundary-discipline",
+      "original_name": "principle-boundary-discipline",
+      "path": "skills/principle-boundary-discipline",
+      "sha256": "55d63ee9d377c4a518339a648526878d27133f305ca00d519be95a729c8dbd44",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-boundary-discipline",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-build-the-lever",
+      "original_name": "principle-build-the-lever",
+      "path": "skills/principle-build-the-lever",
+      "sha256": "fb9a78644ecef92490324b805db63a6813509d19991dbd1bfa2f794a95cfd262",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-build-the-lever",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-encode-lessons-in-structure",
+      "original_name": "principle-encode-lessons-in-structure",
+      "path": "skills/principle-encode-lessons-in-structure",
+      "sha256": "39456efdd2bfc042495115c4b226eb11da09bdb5ca6ffc5edd40d527ad8e53ce",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-encode-lessons-in-structure",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-exhaust-the-design-space",
+      "original_name": "principle-exhaust-the-design-space",
+      "path": "skills/principle-exhaust-the-design-space",
+      "sha256": "eeb910839e9847405f32a6c751d20370934c681a895958c105d079873bd35013",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-exhaust-the-design-space",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-experience-first",
+      "original_name": "principle-experience-first",
+      "path": "skills/principle-experience-first",
+      "sha256": "3755ab3288a053dd3bf42f4851a605f8ab4a734ca37ac8345148bdff67fba511",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-experience-first",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-explain-the-number",
+      "original_name": "principle-explain-the-number",
+      "path": "skills/principle-explain-the-number",
+      "sha256": "0000a3e34badb21f104774780386e1b0b80671cff3697ae9ab599f771c2c43cb",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-explain-the-number",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-fix-root-causes",
+      "original_name": "principle-fix-root-causes",
+      "path": "skills/principle-fix-root-causes",
+      "sha256": "86388a2a6a21e4834da03d9d0bb483465f40124f3b164b6070380d5e85f55957",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-fix-root-causes",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-foundational-thinking",
+      "original_name": "principle-foundational-thinking",
+      "path": "skills/principle-foundational-thinking",
+      "sha256": "1d23c9a69f71d4b49a77cff4f3460faf589a0822a44f163ddabbe70fc3815a79",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-foundational-thinking",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-guard-the-context-window",
+      "original_name": "principle-guard-the-context-window",
+      "path": "skills/principle-guard-the-context-window",
+      "sha256": "6d3f22c0677acf3a5dd6b0dd7b9d61a0fbf5e52e21e75e1970f7990fd86c9afa",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-guard-the-context-window",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-laziness-protocol",
+      "original_name": "principle-laziness-protocol",
+      "path": "skills/principle-laziness-protocol",
+      "sha256": "9c35100a4c9a1c36b9b9d69c4abcbef2bbb783132799b8fc1e5831c7b0bc7313",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-laziness-protocol",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-make-operations-idempotent",
+      "original_name": "principle-make-operations-idempotent",
+      "path": "skills/principle-make-operations-idempotent",
+      "sha256": "47c79e3166f30c4d3bf26125c8ea529b127fc468ecf94809ab5aba1ebe79aed0",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-make-operations-idempotent",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-migrate-callers-then-delete-legacy-apis",
+      "original_name": "principle-migrate-callers-then-delete-legacy-apis",
+      "path": "skills/principle-migrate-callers-then-delete-legacy-apis",
+      "sha256": "b38b42c5a972a39c64795afb8eea1be5f7715f023f93cdf444b5f88af8f7f2fe",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-migrate-callers-then-delete-legacy-apis",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-minimize-reader-load",
+      "original_name": "principle-minimize-reader-load",
+      "path": "skills/principle-minimize-reader-load",
+      "sha256": "b0b560e53f6a4b44a125437925dbe1202a000a20703cff3b8280e438b5cf95ac",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-minimize-reader-load",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-model-the-domain",
+      "original_name": "principle-model-the-domain",
+      "path": "skills/principle-model-the-domain",
+      "sha256": "c55ec4d5f4a15bfcef681feec8e924d4afcc91caf6cd2d83acc56e9cb43e71c1",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-model-the-domain",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-never-block-on-the-human",
+      "original_name": "principle-never-block-on-the-human",
+      "path": "skills/principle-never-block-on-the-human",
+      "sha256": "7c81b7559df6cbe1594a6bac2433e063105b1ffa58676fae7c912a41a35852e1",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-never-block-on-the-human",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-outcome-oriented-execution",
+      "original_name": "principle-outcome-oriented-execution",
+      "path": "skills/principle-outcome-oriented-execution",
+      "sha256": "234c15fa31f1184c078936e45b3097f5b917882eb877201de62003638626c571",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-outcome-oriented-execution",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-prove-it-works",
+      "original_name": "principle-prove-it-works",
+      "path": "skills/principle-prove-it-works",
+      "sha256": "e411e390703f8dfa987dc8a19ecde9b4dc14a623b5543d76f65b6c4a94bde1e1",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-prove-it-works",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-redesign-from-first-principles",
+      "original_name": "principle-redesign-from-first-principles",
+      "path": "skills/principle-redesign-from-first-principles",
+      "sha256": "94567cfdc4cf35c3fb0eca0cbf4eb998eb6236b041d266a336768e79a757d2cd",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-redesign-from-first-principles",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-separate-before-serializing-shared-state",
+      "original_name": "principle-separate-before-serializing-shared-state",
+      "path": "skills/principle-separate-before-serializing-shared-state",
+      "sha256": "d44b58f1b770b1855326864a5502ce8e627de278ac2f65edabea5aa1d14b5ba9",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-separate-before-serializing-shared-state",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-sequence-verifiable-units",
+      "original_name": "principle-sequence-verifiable-units",
+      "path": "skills/principle-sequence-verifiable-units",
+      "sha256": "d1719c7e3d8b4b9a2fd0a8561ca36a5d7c708f8d248b8b02dca664b59bfc74c4",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-sequence-verifiable-units",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-subtract-before-you-add",
+      "original_name": "principle-subtract-before-you-add",
+      "path": "skills/principle-subtract-before-you-add",
+      "sha256": "420ad76d27b8f376125bbc7827d69524ca79b6f98c709d40fed952590efddad8",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-subtract-before-you-add",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-test-behavior-not-implementation",
+      "original_name": "principle-test-behavior-not-implementation",
+      "path": "skills/principle-test-behavior-not-implementation",
+      "sha256": "c8b25ca3336056109d6eaf5a973e676945b389ab3d03a12ae8c8ba360869ee21",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-test-behavior-not-implementation",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "principle-type-system-discipline",
+      "original_name": "principle-type-system-discipline",
+      "path": "skills/principle-type-system-discipline",
+      "sha256": "098982c080f2fcdaf857ef2946a37eefe0ba01c4b7959d42b3910d611643d58f",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/principle-type-system-discipline",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "raccoon",
+      "original_name": "raccoon",
+      "path": "skills/raccoon",
+      "sha256": "c77c54722827b3ea6265e6377f92ee96fd00ade22a8cb2052e3524756b7ca8a9",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/raccoon",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        },
+        {
+          "name": "claude",
+          "path": ".claude/skills/raccoon",
+          "origin": "local:/home/ubuntu/.claude/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "recall",
+      "original_name": "recall",
+      "path": "skills/recall",
+      "sha256": "c3ad2f9c8a1cfb52e661bc692d391d924bddebfd2cb6b163f3c35f7f70d7a521",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/recall",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "reflect",
+      "original_name": "reflect",
+      "path": "skills/reflect",
+      "sha256": "6e6f1de19593b453616cef690f4676612a4bbc837be1c7872f2616b589bf041d",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/reflect",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "reproduce-and-fix-issues",
+      "original_name": "reproduce-and-fix-issues",
+      "path": "skills/reproduce-and-fix-issues",
+      "sha256": "a4bf696b5385e7848861d0ff5b3390c161c10c3b7f8800d8803f4832b5c7b60f",
+      "sources": [
+        {
+          "name": "pstack-benny",
+          "path": "automations/benny/skills/reproduce-and-fix-issues",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "research-artifacts",
+      "original_name": "research-artifacts",
+      "path": "skills/research-artifacts",
+      "sha256": "81e152b215ae10735d945221728aba6fd648f2a962efa9bca432d33bca0fb3bc",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/research-artifacts",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "setup-benny",
+      "original_name": "setup-benny",
+      "path": "skills/setup-benny",
+      "sha256": "f66f3fcd3055b26cc55e6c25557fe9ded0bcde5e3393e62a5e483aa9847af280",
+      "sources": [
+        {
+          "name": "pstack-benny",
+          "path": "automations/benny/skills/setup-benny",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "setup-pstack",
+      "original_name": "setup-pstack",
+      "path": "skills/setup-pstack",
+      "sha256": "7bea6512cefb90cda2ba8902884cb6851f78bfd2e0b716dbef0e6badcb3b82de",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/setup-pstack",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "sharpen",
+      "original_name": "sharpen",
+      "path": "skills/sharpen",
+      "sha256": "06d7cc1950d1a9ac9a04405bc08a1e06bdaa6d415b1540a80ddf47e34cef8b28",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/sharpen",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "show-me-your-work",
+      "original_name": "show-me-your-work",
+      "path": "skills/show-me-your-work",
+      "sha256": "4054ff8b563c32006a582d184c9b305ede938d4ea45e18383202519343d1258e",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/show-me-your-work",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "statechart",
+      "original_name": "statechart",
+      "path": "skills/statechart",
+      "sha256": "4f1b621d0240808df640e7344a49bdbe914191394df957d8c9b25cd1b86741a8",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/statechart",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "swarm",
+      "original_name": "swarm",
+      "path": "skills/swarm",
+      "sha256": "896cda516c72f746377986d04a0873b15fba30cddc2a985371ba855e531a31e9",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/swarm",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "tdd",
+      "original_name": "tdd",
+      "path": "skills/tdd",
+      "sha256": "5cb44876b687184a55d1e4355a830374ccd5e0e4c361d19e8f5928d3496704b1",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/tdd",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "teach",
+      "original_name": "teach",
+      "path": "skills/teach",
+      "sha256": "26ac0702abb065f8808d81ceb51d869dc9e5f7b432372d8af284fca1f4e894e4",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/teach",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "technical-writing",
+      "original_name": "technical-writing",
+      "path": "skills/technical-writing",
+      "sha256": "f726f6d06c9969cecafc57c7bda1cd189f10947c54807089f7d134fd10fda378",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/technical-writing",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "test-unit-review",
+      "original_name": "test-unit-review",
+      "path": "skills/test-unit-review",
+      "sha256": "9596fa041eaa5bfd9c820862f6c0f0a703e48c54c3209aa6bd83934f540cf1db",
+      "sources": [
+        {
+          "name": "claude",
+          "path": ".claude/skills/test-unit-review",
+          "origin": "local:/home/ubuntu/.claude/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "triage-issue-reports",
+      "original_name": "triage-issue-reports",
+      "path": "skills/triage-issue-reports",
+      "sha256": "d4e74992f50db8eb15a735584063be30bf32ca71e885c5c4451b5b86ca0f0213",
+      "sources": [
+        {
+          "name": "pstack-benny",
+          "path": "automations/benny/skills/triage-issue-reports",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "typescript-best-practices",
+      "original_name": "typescript-best-practices",
+      "path": "skills/typescript-best-practices",
+      "sha256": "650c4d7e3289cb72a3a9e49e2af0d28b0e04d3167eb8b782086fcdf10483b9fc",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/typescript-best-practices",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "unslop",
+      "original_name": "unslop",
+      "path": "skills/unslop",
+      "sha256": "e7713c9212c094596766638b2faf63036b26cfa2fb485802eb9e954ffacde372",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/unslop",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "visual-note-refactor",
+      "original_name": "visual-note-refactor",
+      "path": "skills/visual-note-refactor",
+      "sha256": "da1e0860d68a3666a85275b8adb1e6825ce410da9c78c91360580060c4186e14",
+      "sources": [
+        {
+          "name": "tools-configs",
+          "path": "skills/visual-note-refactor",
+          "origin": "https://github.com/bajor/tools-configs",
+          "revision": "b6f86623807c1d4e63a33f0f4d81f4a9a526ea93"
+        },
+        {
+          "name": "codex",
+          "path": ".codex/skills/visual-note-refactor",
+          "origin": "local:/home/ubuntu/.codex/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "why",
+      "original_name": "why",
+      "path": "skills/why",
+      "sha256": "cfb8fa61ba07f6848eace0bc3dace28539d337216d6fcf6d6d766958f5fde499",
+      "sources": [
+        {
+          "name": "pstack",
+          "path": "skills/why",
+          "origin": "https://github.com/backnotprop/pstack",
+          "revision": "4161d4ef5051574e825ffe70e2f43a2e49e4b3db"
+        }
+      ]
+    },
+    {
+      "name": "wiki-config",
+      "original_name": "wiki-config",
+      "path": "skills/wiki-config",
+      "sha256": "aa81e4af96ef8210733bf0d1a2a8f6fc26b35a26c4ea092da26ae1daae718850",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/wiki-config",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "wiki-crystallize",
+      "original_name": "wiki-crystallize",
+      "path": "skills/wiki-crystallize",
+      "sha256": "3d51fa510cf5cc3ca6bdf91517303d0a5d43c3e1ee1d617c358b22edd5983e9c",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/wiki-crystallize",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "wiki-ingest",
+      "original_name": "wiki-ingest",
+      "path": "skills/wiki-ingest",
+      "sha256": "a5cb6decc1d7295450773ad425fc4f52eb6aab3e5012eaad94a1894454a46443",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/wiki-ingest",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "wiki-integrate",
+      "original_name": "wiki-integrate",
+      "path": "skills/wiki-integrate",
+      "sha256": "27db8ea95a701c4f65fb0737fce39e615885273beae94a4b007cb76f64d4d531",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/wiki-integrate",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "wiki-lint",
+      "original_name": "wiki-lint",
+      "path": "skills/wiki-lint",
+      "sha256": "a07cede0f62ed1f8a0890f5d31a3bc01f892c2bad073f6510bb775a0ab605b61",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/wiki-lint",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "wiki-query",
+      "original_name": "wiki-query",
+      "path": "skills/wiki-query",
+      "sha256": "52b41681101798db864e98d195359cbbc35e056943c0ba366dd3bb8d1d1a4528",
+      "sources": [
+        {
+          "name": "agents",
+          "path": ".agents/skills/wiki-query",
+          "origin": "local:/home/ubuntu/.agents/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "youtube-explainer-email",
+      "original_name": "youtube-explainer-email",
+      "path": "skills/youtube-explainer-email",
+      "sha256": "11cf1a91da8e1bd6fc8ab3b1d7ca092b751ee7345048438916c1121cba3369ef",
+      "sources": [
+        {
+          "name": "tools-configs",
+          "path": "skills/youtube-explainer-email",
+          "origin": "https://github.com/bajor/tools-configs",
+          "revision": "b6f86623807c1d4e63a33f0f4d81f4a9a526ea93"
+        },
+        {
+          "name": "claude",
+          "path": ".claude/skills/youtube-explainer-email",
+          "origin": "local:/home/ubuntu/.claude/skills",
+          "revision": null
+        },
+        {
+          "name": "codex",
+          "path": ".codex/skills/youtube-explainer-email",
+          "origin": "local:/home/ubuntu/.codex/skills",
+          "revision": null
+        }
+      ]
+    },
+    {
+      "name": "zadania-mira-a4-current-task",
+      "original_name": "zadania-mira-a4-current-task",
+      "path": "skills/zadania-mira-a4-current-task",
+      "sha256": "787f3358def1d19bd88a45964ffaa765a766ce40fbf21dbf332e4b619b7bf68e",
+      "sources": [
+        {
+          "name": "codex",
+          "path": ".codex/skills/zadania-mira-a4-current-task",
+          "origin": "local:/home/ubuntu/.codex/skills",
+          "revision": null
+        }
+      ]
+    }
+  ]
+}
