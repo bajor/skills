@@ -65,8 +65,8 @@ already solve it.
 * Prefer deletion and reuse. Never sacrifice correctness or readability to reduce
   line count or diff size.
 * Suggest a simpler approach when it meets the same requirements. Make routine
-  implementation decisions within the user's request and any approved plan;
-  follow the planning and scope-approval rules in section 4.
+  implementation decisions within the user's request and stated plan;
+  follow the planning and scope rules in section 4.
 * Comment only on non-obvious intent or constraints. Mark deliberate shortcuts with
   a `ponytail` comment naming the limit and upgrade path. For example:
   `// ponytail: Loads the bounded export in memory; stream it if exports become unbounded.`
@@ -79,6 +79,14 @@ already solve it.
   abstractions for hypothetical reuse.
 * Before adding a dependency, check whether a small, clear implementation suffices.
   Require a maintained package, a compatible license, and a justified dependency tree.
+
+### Functional Programming
+
+Where the language and task support them, favor pure functions, immutable data,
+explicit dependencies and error handling, and types that represent valid states
+(see section 5). Keep side effects such as I/O at clear boundaries to improve
+reliability, debugging, and reasoning. Apply these practices pragmatically; do
+not introduce unnecessary abstractions or new dependencies to enforce a style.
 
 ### Change Scope
 
@@ -138,26 +146,26 @@ Apply this agreement to initial implementation and review fixes.
 Use Plan mode for medium or larger tasks: multi-file refactors, bug investigations,
 multi-component changes, or work expected to exceed 30 minutes.
 
-1. For any change touching more than one file, propose a plan and wait for the
-   user's approval before editing, even when the instructions are unambiguous.
-   Trivial single-file changes do not need a plan.
+1. For any change touching more than one file, state a concise plan and proceed
+   without waiting for approval unless the user explicitly requests an approval
+   checkpoint. Trivial single-file changes do not need a plan.
 2. Before writing code, state the approach and trade-offs in 2-3 sentences.
 3. When debugging, explain the root cause before applying a fix. Use evidence to
    test the diagnosis instead of applying speculative fixes in a loop.
 4. After implementing, walk the user through the diff: what changed, why it
    changed, and what could break.
-5. Commit completed, verified work within the authorized scope without asking
-   for permission to commit. Plan approval and scope decisions remain required;
-   this does not authorize unrelated changes, destructive actions, or publication
-   beyond the user's request.
+5. Implement, verify, commit, and complete requested pushes, PRs, and merges
+   without separate permission prompts. Stay within the user's request; this
+   does not authorize unrelated changes, destructive actions, or publication
+   beyond the requested delivery workflow.
 
 For work consisting only of boilerplate, throwaway scripts, or test fixtures,
-skip Plan mode and these explanation and approval steps and implement directly.
+skip Plan mode and these explanation steps and implement directly.
 Verification, scope, and safety rules still apply.
 
-State consequential assumptions. Ask for clarification when competing interpretations
-would materially change the result; decide routine implementation details within
-the user's requested scope yourself.
+State consequential assumptions and decide routine implementation details yourself.
+Ask only for missing facts that cannot be recovered from authoritative sources
+and would materially change the result, not for permission to proceed within scope.
 
 ### Pause and Report Missing Information or Safeguards
 
@@ -172,10 +180,11 @@ or bypass a safeguard to make progress.
    a Model Context Protocol (MCP) integration could provide authoritative data or
    tool access, or an automated local hook and CI check could prevent the error.
    Recommend the smallest effective control, or explain why none fits.
-3. Propose the next step and identify any input or authorization needed. Obtain
-   missing information or agree on a safe approach before resuming the affected
-   action. Do not install integrations, change credentials or permissions, or
-   expand scope without authorization.
+3. State the next safe step and recover missing information within scope where
+   possible. If the prerequisite cannot be resolved, report the affected action
+   as blocked rather than asking for routine approval or guessing. Do not install
+   integrations, change credentials or permissions, or expand scope unless the
+   user's request authorizes that work.
 
 For example, if a required validation command cannot run locally, report the
 missing dependency and propose a reproducible hook setup. Do not push and hope
@@ -212,29 +221,33 @@ current requirements; a `ponytail` comment does not justify incorrect behavior.
 ## 7. Verification
 
 1. Run the relevant existing checks before editing to establish a baseline.
-2. Inspect the repository's CI workflows and Git hook configuration. Ensure
-   substantial pre-commit and pre-push hooks are installed, executable, and invoke
-   the repository's maintained validation commands. Sample hooks or a whitespace
-   check alone are not sufficient. If hooks are absent or incomplete, pause,
-   report the gap, and arrange their setup within the authorized scope.
-3. Map every applicable CI check to its local command and prerequisites. The
-   hooks must enforce the complete locally reproducible CI gate before pushing:
-   tests, type checking, linting, formatting checks, builds, security scans, and
-   configuration or documentation validation where required by the repository.
+2. In code projects where hooks provide meaningful protection, use executable
+   pre-commit and pre-push hooks that invoke maintained validation commands.
+   Inspect existing CI and hook configuration; report missing safeguards and
+   arrange justified setup within scope. Sample hooks or whitespace checks alone
+   do not replace code validation. Do not require new hook infrastructure for
+   notes, documentation-only repositories, or every push. Use relevant validation
+   for documentation and low-impact changes, and respect existing applicable hooks.
+3. Map applicable CI checks to local commands and prerequisites. For code changes,
+   run the complete relevant, locally reproducible CI gate before pushing, using
+   hooks where justified: tests, type checking, linting, formatting checks, builds,
+   security scans, and configuration or documentation validation as applicable.
    Use `make test` where defined, otherwise the documented equivalent, and match
    CI tool versions and settings. Use strict compiler settings where supported
    and introduce no warnings. Do not substitute a smaller smoke test for the gate.
-4. Run the required checks on the final changes before committing and pushing.
+4. Run the relevant required checks on the final changes before committing and pushing.
    Fix regressions and known failures locally first. Never push a revision known
    or expected to fail CI, including an unresolved pre-existing failure. Do not
    use CI/CD as a trial-and-error runner for failures reproducible locally.
 5. Do not bypass hooks with `--no-verify`, skip variables, disabled checks, or
-   weakened assertions. If a required check cannot run locally, stop before
-   pushing and state which check, why, and the risk. Obtain an explicit agreement
-   on the remote-only validation or exception; never silently omit the check.
+   weakened assertions. If a required check cannot run locally, state which
+   check, why, and the risk. Use a documented remote-only CI gate only after all
+   applicable local checks pass; otherwise stop before pushing until the missing
+   prerequisite is resolved. Do not ask for approval to bypass a check or silently
+   omit it.
 6. Rerun affected checks after edits, dependency or environment changes, rebases,
-   or failures. Reuse a successful result only when the hook can establish that
-   the validated inputs are unchanged. CI remains an independent verification,
+   or failures. Reuse a successful result only when you can establish that the
+   validated inputs are unchanged. CI remains an independent verification,
    not a replacement for the local gate. Do not build unrelated test infrastructure
    for a documentation-only change.
 7. Before reporting completion, review the actual diff and confirm the requested
@@ -292,8 +305,8 @@ private profile.
    walkthrough, then commit verified, authorized work without another permission
    prompt.
 4. Before pushing, fetch `origin` and rebase onto `origin/main`. Resolve conflicts
-   and rerun affected checks if the code changed. Enforce section 7's local hook
-   gate before sending the branch to the remote.
+   and rerun affected checks if the code changed. Apply section 7's relevant local
+   validation and applicable hooks before sending the branch to the remote.
 5. Push the branch and create a PR immediately with a clear title, description,
    verification results, and a suggested reading order. For a series, state this
    PR's scope, dependencies, and remaining PRs.
@@ -349,21 +362,21 @@ remain useful when automatic uploads are disabled.
   presenting inference as recorded intent.
 * Keep shared project instructions in `AGENTS.md`; use supported imports or links
   for agent-specific entry points rather than maintaining divergent copies.
-* Preserve configured capture, upload, and model-spend settings. Obtain permission
-  before changing them or starting paid distillation unless the task explicitly
-  authorizes that setup. Checkpoint `--generate` is a model-backed write operation.
+* Preserve configured capture, upload, and model-spend settings. Do not change
+  them or start paid distillation unless the task explicitly requests that setup.
+  Checkpoint `--generate` is a model-backed write operation.
 
 ## Completion Checklist
 
 * [ ] The requested behavior is complete, clear, and correct.
-* [ ] Section 4's planning, explanation, and scope-approval requirements are
-  satisfied; authorized commits did not require another permission prompt.
+* [ ] Section 4's planning, explanation, and scope requirements are satisfied;
+  authorized work and requested delivery did not require routine approval prompts.
 * [ ] Struggles, missing information, and safeguard gaps were reported explicitly
   with a proposed skill, MCP integration, or automated check where applicable.
 * [ ] Existing code was checked for reuse; scope and dependencies are justified.
 * [ ] Types enforce relevant invariants; source files respect the size limit.
-* [ ] Added tests detect real failures; required local hooks and applicable CI
-  checks passed before pushing, or a remote-only exception was explicitly agreed.
+* [ ] Added tests detect real failures; relevant local checks and justified project
+  hooks passed before pushing; documented remote-only checks remain enforced.
 * [ ] Writing is direct, unambiguous, and free of em-dashes.
 * [ ] Each PR fits the 15-minute comprehension budget; oversized changes are split
   into cohesive, independently understandable PRs.
