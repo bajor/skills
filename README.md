@@ -14,6 +14,7 @@ npx skills add bajor/skills
 
 ## Layout
 
+- `agents/AGENTS.md`: shared coding guidelines, with [global setup instructions](agents/README.md).
 - `skills/<name>/SKILL.md`: an installable agent skill and its supporting files.
 - `catalog.json`: source provenance and content hashes for every retained skill.
 - `LICENSES/pstack-MIT.txt`: license for imported pstack material.
@@ -25,6 +26,9 @@ as `claude-statechart`.
 
 Catalog SHA-256 values are grouped in blocks of four hexadecimal characters for
 readability and compatibility with the repository's PII scanner.
+
+The `agents/` directory moved from `bajor/tools-configs`. It is maintained here
+separately from installable skills and is not part of the skill provenance catalog.
 
 ## Imported sources
 
