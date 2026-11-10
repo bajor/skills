@@ -163,10 +163,13 @@ const reviewDecision = (value: unknown): T.ReviewDecision =>
   );
 function parseRemote(value: string): T.Repository | null {
   let normalized = value.trim();
-  if (normalized.startsWith("git@github.com:"))
-    normalized = `https://github.com/${normalized.slice(15)}`;
-  if (normalized.startsWith("ssh://git@github.com/"))
-    normalized = `https://github.com/${normalized.slice(21)}`;
+  const githubHost = "github.com";
+  const sshScpPrefix = `git@${githubHost}:`;
+  const sshUrlPrefix = `ssh://${sshScpPrefix.slice(0, -1)}/`;
+  if (normalized.startsWith(sshScpPrefix))
+    normalized = `https://${githubHost}/${normalized.slice(sshScpPrefix.length)}`;
+  if (normalized.startsWith(sshUrlPrefix))
+    normalized = `https://${githubHost}/${normalized.slice(sshUrlPrefix.length)}`;
   try {
     const url = new URL(normalized);
     const parts = url.pathname

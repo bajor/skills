@@ -23,6 +23,7 @@ const isListField = (field: Section["field"]): field is ListField =>
   field === "actionConstraints";
 
 const SECTIONS = new Map<string, Section>();
+const MAX_TLC_INTEGER = 2_147_483_647;
 for (const section of [
   { key: "CONSTANT", plural: "CONSTANTS" },
   { key: CHECK_DEADLOCK, field: "checkDeadlock" },
@@ -127,8 +128,8 @@ function tokenizeConfig(text: string, cannot: (line: number, words: string) => E
             start,
             `TLC splits ${word} into ${word.match(/\d+|_/g)?.join(" ")}, because a name needs a letter.`,
           );
-        if (Number(word) > 2147483647)
-          throw cannot(start, `TLC cannot read a number above 2147483647, such as ${word}.`);
+        if (Number(word) > MAX_TLC_INTEGER)
+          throw cannot(start, `TLC cannot read a number above ${MAX_TLC_INTEGER}, such as ${word}.`);
       }
       push(word);
     } else if (two === "<-") push(two);

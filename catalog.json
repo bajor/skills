@@ -5,7 +5,7 @@
       "name": "architect",
       "original_name": "architect",
       "path": "skills/architect",
-      "sha256": "c028e9c105200d8d1d6a85f844cc0ff4f8229fea1f521a1c0065c34f179865f3",
+      "sha256": "c028-e9c1-0520-0d8d-1d6a-85f8-44cc-0ff4-f822-9fea-1f52-1a1c-0065-c34f-1798-65f3",
       "sources": [
         {
           "name": "pstack",
@@ -19,7 +19,7 @@
       "name": "arena",
       "original_name": "arena",
       "path": "skills/arena",
-      "sha256": "38ed65772178d696bd93c58cbba792298bb5f73865a6d0d98731fc14261615a2",
+      "sha256": "38ed-6577-2178-d696-bd93-c58c-bba7-9229-8bb5-f738-65a6-d0d9-8731-fc14-2616-15a2",
       "sources": [
         {
           "name": "pstack",
@@ -33,7 +33,7 @@
       "name": "automate-me",
       "original_name": "automate-me",
       "path": "skills/automate-me",
-      "sha256": "47557fd31e309bc473ef1da3cad099f64d5026f21a71ea79c98b4f6ceaf095a5",
+      "sha256": "4755-7fd3-1e30-9bc4-73ef-1da3-cad0-99f6-4d50-26f2-1a71-ea79-c98b-4f6c-eaf0-95a5",
       "sources": [
         {
           "name": "pstack",
@@ -47,7 +47,7 @@
       "name": "benchmark-checklist",
       "original_name": "benchmark-checklist",
       "path": "skills/benchmark-checklist",
-      "sha256": "77f6adce1b8785c7e26d762992365b466d3e7d09d61edbd670f2bceccf649146",
+      "sha256": "77f6-adce-1b87-85c7-e26d-7629-9236-5b46-6d3e-7d09-d61e-dbd6-70f2-bcec-cf64-9146",
       "sources": [
         {
           "name": "pstack",
@@ -61,7 +61,7 @@
       "name": "blast-radius",
       "original_name": "blast-radius",
       "path": "skills/blast-radius",
-      "sha256": "b7a89ce84164a9900d6f6a52e82cc5eb070bb08e0648bdb16d967a130c19e167",
+      "sha256": "b7a8-9ce8-4164-a990-0d6f-6a52-e82c-c5eb-070b-b08e-0648-bdb1-6d96-7a13-0c19-e167",
       "sources": [
         {
           "name": "pstack",
@@ -75,7 +75,7 @@
       "name": "brainstorming",
       "original_name": "brainstorming",
       "path": "skills/brainstorming",
-      "sha256": "c832367721022fd2cfabf25b9b45ce3514f52fd643f26a0e4ee7d20c218bdeed",
+      "sha256": "c832-3677-2102-2fd2-cfab-f25b-9b45-ce35-14f5-2fd6-43f2-6a0e-4ee7-d20c-218b-deed",
       "sources": [
         {
           "name": "codex",
@@ -89,7 +89,7 @@
       "name": "bro",
       "original_name": "bro",
       "path": "skills/bro",
-      "sha256": "a333dd2281770dcc9fb2317b066bd0dbefd780aa9abfd6b19f7d31db3ad3f007",
+      "sha256": "a333-dd22-8177-0dcc-9fb2-317b-066b-d0db-efd7-80aa-9abf-d6b1-9f7d-31db-3ad3-f007",
       "sources": [
         {
           "name": "pstack",
@@ -103,7 +103,7 @@
       "name": "claude-statechart",
       "original_name": "statechart",
       "path": "skills/claude-statechart",
-      "sha256": "9c7d9289a592eda0dbd7854a3db08895ade57e91d66178431a59c009c536ab15",
+      "sha256": "3079-5609-d327-b8c3-a70e-ed6f-32ee-602a-f127-790f-fd98-9d56-508c-1f90-b67b-407a",
       "sources": [
         {
           "name": "claude",
@@ -123,7 +123,7 @@
       "name": "correct",
       "original_name": "correct",
       "path": "skills/correct",
-      "sha256": "e86f41b862349cc7019815c374a21074e3e2087618cf0fe8f2f869059f4d9937",
+      "sha256": "e86f-41b8-6234-9cc7-0198-15c3-74a2-1074-e3e2-0876-18cf-0fe8-f2f8-6905-9f4d-9937",
       "sources": [
         {
           "name": "pstack",
@@ -137,7 +137,7 @@
       "name": "create-formal-verification-skill",
       "original_name": "create-formal-verification-skill",
       "path": "skills/create-formal-verification-skill",
-      "sha256": "ac374f21de2ea831366fccdc114a9d55afa88fa86c6980f069d54a381d2aaacf",
+      "sha256": "ac37-4f21-de2e-a831-366f-ccdc-114a-9d55-afa8-8fa8-6c69-80f0-69d5-4a38-1d2a-aacf",
       "sources": [
         {
           "name": "pstack",
@@ -151,7 +151,7 @@
       "name": "create-verification-skill",
       "original_name": "create-verification-skill",
       "path": "skills/create-verification-skill",
-      "sha256": "3ed20edba215f42392aa14cfaff19a40f0830f0f1abe1b1b6e62b7cfcfbfe1cd",
+      "sha256": "3ed2-0edb-a215-f423-92aa-14cf-aff1-9a40-f083-0f0f-1abe-1b1b-6e62-b7cf-cfbf-e1cd",
       "sources": [
         {
           "name": "pstack",
@@ -165,7 +165,7 @@
       "name": "deslopify-notes",
       "original_name": "deslopify-notes",
       "path": "skills/deslopify-notes",
-      "sha256": "c43cf42d86f0a6e536569eefc85299e56d1ed372b4c995ab3e459f16d8df3893",
+      "sha256": "c43c-f42d-86f0-a6e5-3656-9eef-c852-99e5-6d1e-d372-b4c9-95ab-3e45-9f16-d8df-3893",
       "sources": [
         {
           "name": "tools-configs",
@@ -191,7 +191,7 @@
       "name": "figure-it-out",
       "original_name": "figure-it-out",
       "path": "skills/figure-it-out",
-      "sha256": "e0b8daee7524f146866616d66eb82e3321595a083a06ce809d86f28faec66934",
+      "sha256": "e0b8-daee-7524-f146-8666-16d6-6eb8-2e33-2159-5a08-3a06-ce80-9d86-f28f-aec6-6934",
       "sources": [
         {
           "name": "pstack",
@@ -205,7 +205,7 @@
       "name": "gmail-artifact-delivery",
       "original_name": "gmail-artifact-delivery",
       "path": "skills/gmail-artifact-delivery",
-      "sha256": "1e34b6e610fa703300dc22f241727808acd982ceacede5ff1f52a9107cfab3f0",
+      "sha256": "1e34-b6e6-10fa-7033-00dc-22f2-4172-7808-acd9-82ce-aced-e5ff-1f52-a910-7cfa-b3f0",
       "sources": [
         {
           "name": "tools-configs",
@@ -231,7 +231,7 @@
       "name": "grill-me",
       "original_name": "grill-me",
       "path": "skills/grill-me",
-      "sha256": "0fe30e2291a6f990a5414f85205535bc06519622bf604980511d7c11dad327e0",
+      "sha256": "0fe3-0e22-91a6-f990-a541-4f85-2055-35bc-0651-9622-bf60-4980-511d-7c11-dad3-27e0",
       "sources": [
         {
           "name": "agents",
@@ -257,7 +257,7 @@
       "name": "gym-training-log",
       "original_name": "gym-training-log",
       "path": "skills/gym-training-log",
-      "sha256": "fd439cabdd552d9712d243dd8a1160b50c5340f8d0228cff5958b788bc77201f",
+      "sha256": "fd43-9cab-dd55-2d97-12d2-43dd-8a11-60b5-0c53-40f8-d022-8cff-5958-b788-bc77-201f",
       "sources": [
         {
           "name": "tools-configs",
@@ -283,7 +283,7 @@
       "name": "how",
       "original_name": "how",
       "path": "skills/how",
-      "sha256": "c85e69d22f1a5e8a482ec69daf7063f452058a7427fa3f9fc8b3fb0034018251",
+      "sha256": "c85e-69d2-2f1a-5e8a-482e-c69d-af70-63f4-5205-8a74-27fa-3f9f-c8b3-fb00-3401-8251",
       "sources": [
         {
           "name": "pstack",
@@ -297,7 +297,7 @@
       "name": "in-your-own-words",
       "original_name": "in-your-own-words",
       "path": "skills/in-your-own-words",
-      "sha256": "49d983cb552ece1cc4b6a8e16f48dc90611f3c1a2d834507ec48fa80f30fa044",
+      "sha256": "49d9-83cb-552e-ce1c-c4b6-a8e1-6f48-dc90-611f-3c1a-2d83-4507-ec48-fa80-f30f-a044",
       "sources": [
         {
           "name": "pstack",
@@ -311,7 +311,7 @@
       "name": "insert-mermaid-diagrams",
       "original_name": "insert-mermaid-diagrams",
       "path": "skills/insert-mermaid-diagrams",
-      "sha256": "f703b5b8a0d25ab27a2003adf9cb593609eb3a5ff4cd9395f7b12d2ff5e30222",
+      "sha256": "f703-b5b8-a0d2-5ab2-7a20-03ad-f9cb-5936-09eb-3a5f-f4cd-9395-f7b1-2d2f-f5e3-0222",
       "sources": [
         {
           "name": "agents",
@@ -325,7 +325,7 @@
       "name": "interrogate",
       "original_name": "interrogate",
       "path": "skills/interrogate",
-      "sha256": "aa6c805b108cfdd38d730a9ac4e369957687dfd767669f6673735be358567fcb",
+      "sha256": "aa6c-805b-108c-fdd3-8d73-0a9a-c4e3-6995-7687-dfd7-6766-9f66-7373-5be3-5856-7fcb",
       "sources": [
         {
           "name": "pstack",
@@ -339,7 +339,7 @@
       "name": "ketchup",
       "original_name": "ketchup",
       "path": "skills/ketchup",
-      "sha256": "4744c478dc1be751f0c47a67e38161dff739b340ea564be51f0176713ed8d740",
+      "sha256": "4744-c478-dc1b-e751-f0c4-7a67-e381-61df-f739-b340-ea56-4be5-1f01-7671-3ed8-d740",
       "sources": [
         {
           "name": "pstack",
@@ -353,7 +353,7 @@
       "name": "ketchup-video",
       "original_name": "ketchup-video",
       "path": "skills/ketchup-video",
-      "sha256": "c7a76236bfa1f7cd1b8d87e5c2bb8e08f8ba02e1c2aa4900c4e8cbc57a962bf4",
+      "sha256": "c7a7-6236-bfa1-f7cd-1b8d-87e5-c2bb-8e08-f8ba-02e1-c2aa-4900-c4e8-cbc5-7a96-2bf4",
       "sources": [
         {
           "name": "pstack",
@@ -367,7 +367,7 @@
       "name": "large-work-wrap-up",
       "original_name": "large-work-wrap-up",
       "path": "skills/large-work-wrap-up",
-      "sha256": "8292e7bd3541489e49e1bebc735b0c3e4d301851ae4e69790d7ddd2dbf0ca119",
+      "sha256": "8292-e7bd-3541-489e-49e1-bebc-735b-0c3e-4d30-1851-ae4e-6979-0d7d-dd2d-bf0c-a119",
       "sources": [
         {
           "name": "tools-configs",
@@ -393,7 +393,7 @@
       "name": "leetcode-next-problem",
       "original_name": "leetcode-next-problem",
       "path": "skills/leetcode-next-problem",
-      "sha256": "dba7d85390300d68055969c2fdfbefc2a8136681218e17650f76ca5cc1362864",
+      "sha256": "dba7-d853-9030-0d68-0559-69c2-fdfb-efc2-a813-6681-218e-1765-0f76-ca5c-c136-2864",
       "sources": [
         {
           "name": "claude",
@@ -413,7 +413,7 @@
       "name": "living-docs",
       "original_name": "living-docs",
       "path": "skills/living-docs",
-      "sha256": "9f8c8200b11230d1f51bf3c6846112db8bfb5acbb96acfe34c83092d1ef39dc4",
+      "sha256": "9f8c-8200-b112-30d1-f51b-f3c6-8461-12db-8bfb-5acb-b96a-cfe3-4c83-092d-1ef3-9dc4",
       "sources": [
         {
           "name": "agents",
@@ -427,7 +427,7 @@
       "name": "maintain-formal-verification-skill",
       "original_name": "maintain-formal-verification-skill",
       "path": "skills/maintain-formal-verification-skill",
-      "sha256": "935e55c6161e3b7988e3e49ecf4f17248e124f595cc7d626b398577317a6a8ed",
+      "sha256": "935e-55c6-161e-3b79-88e3-e49e-cf4f-1724-8e12-4f59-5cc7-d626-b398-5773-17a6-a8ed",
       "sources": [
         {
           "name": "pstack",
@@ -441,7 +441,7 @@
       "name": "maintain-verification-skill",
       "original_name": "maintain-verification-skill",
       "path": "skills/maintain-verification-skill",
-      "sha256": "b4e67f06ad8fc70b269a7829f3c0f59ee425559b9c7447bfd0af0319828192d8",
+      "sha256": "b4e6-7f06-ad8f-c70b-269a-7829-f3c0-f59e-e425-559b-9c74-47bf-d0af-0319-8281-92d8",
       "sources": [
         {
           "name": "pstack",
@@ -455,7 +455,7 @@
       "name": "make-bot-ui",
       "original_name": "make-bot-ui",
       "path": "skills/make-bot-ui",
-      "sha256": "32020fd5b3f968d997aa3c4f7b979ae7bc41ba01958ccb93c9a386cf45c7499c",
+      "sha256": "3202-0fd5-b3f9-68d9-97aa-3c4f-7b97-9ae7-bc41-ba01-958c-cb93-c9a3-86cf-45c7-499c",
       "sources": [
         {
           "name": "pstack",
@@ -469,7 +469,7 @@
       "name": "no-comments",
       "original_name": "no-comments",
       "path": "skills/no-comments",
-      "sha256": "5f4168c187a0a4ee56bd1efec81000ae107f6fea6de70598f7832480cbf76aea",
+      "sha256": "5f41-68c1-87a0-a4ee-56bd-1efe-c810-00ae-107f-6fea-6de7-0598-f783-2480-cbf7-6aea",
       "sources": [
         {
           "name": "pstack",
@@ -483,7 +483,7 @@
       "name": "note-review",
       "original_name": "note-review",
       "path": "skills/note-review",
-      "sha256": "a195da4693586c59c93880bfb43947dfadc7c3fd823b40940e83934ada14311f",
+      "sha256": "a195-da46-9358-6c59-c938-80bf-b439-47df-adc7-c3fd-823b-4094-0e83-934a-da14-311f",
       "sources": [
         {
           "name": "tools-configs",
@@ -509,7 +509,7 @@
       "name": "obsidian-markdown",
       "original_name": "obsidian-markdown",
       "path": "skills/obsidian-markdown",
-      "sha256": "dd1f743ff755f0b472ec73b4f1f451342f149b58d8556fb07874665ce988368c",
+      "sha256": "dd1f-743f-f755-f0b4-72ec-73b4-f1f4-5134-2f14-9b58-d855-6fb0-7874-665c-e988-368c",
       "sources": [
         {
           "name": "agents",
@@ -523,7 +523,7 @@
       "name": "okf-knowledge-format",
       "original_name": "okf-knowledge-format",
       "path": "skills/okf-knowledge-format",
-      "sha256": "0e3f32fdef2068e59863036f51d2bc297e6266ed6f71ecf7ada0186bb4d9f96f",
+      "sha256": "0e3f-32fd-ef20-68e5-9863-036f-51d2-bc29-7e62-66ed-6f71-ecf7-ada0-186b-b4d9-f96f",
       "sources": [
         {
           "name": "agents",
@@ -537,7 +537,7 @@
       "name": "poteto-help",
       "original_name": "poteto-help",
       "path": "skills/poteto-help",
-      "sha256": "657a040b9e3bd7a385058976aee051c70279cf22ca4f2c1fbd759b57db8bcfac",
+      "sha256": "657a-040b-9e3b-d7a3-8505-8976-aee0-51c7-0279-cf22-ca4f-2c1f-bd75-9b57-db8b-cfac",
       "sources": [
         {
           "name": "pstack",
@@ -551,7 +551,7 @@
       "name": "poteto-mode",
       "original_name": "poteto-mode",
       "path": "skills/poteto-mode",
-      "sha256": "f0df3b0fc18ea8c7790e7215d48ed12c277435485ec7be775c902afb727e7df6",
+      "sha256": "bbd3-d01e-de8f-d36a-0c6e-b494-3e04-fcbd-182f-c8a8-0a44-cfb4-9085-4fa3-26f7-2ac4",
       "sources": [
         {
           "name": "pstack",
@@ -565,7 +565,7 @@
       "name": "pr-diagram",
       "original_name": "pr-diagram",
       "path": "skills/pr-diagram",
-      "sha256": "71031bb4060f20b7c65aac46182df4c92222ae2da65dc329638b6cfded05b348",
+      "sha256": "7103-1bb4-060f-20b7-c65a-ac46-182d-f4c9-2222-ae2d-a65d-c329-638b-6cfd-ed05-b348",
       "sources": [
         {
           "name": "tools-configs",
@@ -579,7 +579,7 @@
       "name": "principle-attack-the-premise",
       "original_name": "principle-attack-the-premise",
       "path": "skills/principle-attack-the-premise",
-      "sha256": "c61a6fabdec7954f4c5565056e659f8947d4a1f6ea29161f973e5d95c2359b0a",
+      "sha256": "c61a-6fab-dec7-954f-4c55-6505-6e65-9f89-47d4-a1f6-ea29-161f-973e-5d95-c235-9b0a",
       "sources": [
         {
           "name": "pstack",
@@ -593,7 +593,7 @@
       "name": "principle-boundary-discipline",
       "original_name": "principle-boundary-discipline",
       "path": "skills/principle-boundary-discipline",
-      "sha256": "55d63ee9d377c4a518339a648526878d27133f305ca00d519be95a729c8dbd44",
+      "sha256": "55d6-3ee9-d377-c4a5-1833-9a64-8526-878d-2713-3f30-5ca0-0d51-9be9-5a72-9c8d-bd44",
       "sources": [
         {
           "name": "pstack",
@@ -607,7 +607,7 @@
       "name": "principle-build-the-lever",
       "original_name": "principle-build-the-lever",
       "path": "skills/principle-build-the-lever",
-      "sha256": "fb9a78644ecef92490324b805db63a6813509d19991dbd1bfa2f794a95cfd262",
+      "sha256": "fb9a-7864-4ece-f924-9032-4b80-5db6-3a68-1350-9d19-991d-bd1b-fa2f-794a-95cf-d262",
       "sources": [
         {
           "name": "pstack",
@@ -621,7 +621,7 @@
       "name": "principle-encode-lessons-in-structure",
       "original_name": "principle-encode-lessons-in-structure",
       "path": "skills/principle-encode-lessons-in-structure",
-      "sha256": "39456efdd2bfc042495115c4b226eb11da09bdb5ca6ffc5edd40d527ad8e53ce",
+      "sha256": "3945-6efd-d2bf-c042-4951-15c4-b226-eb11-da09-bdb5-ca6f-fc5e-dd40-d527-ad8e-53ce",
       "sources": [
         {
           "name": "pstack",
@@ -635,7 +635,7 @@
       "name": "principle-exhaust-the-design-space",
       "original_name": "principle-exhaust-the-design-space",
       "path": "skills/principle-exhaust-the-design-space",
-      "sha256": "eeb910839e9847405f32a6c751d20370934c681a895958c105d079873bd35013",
+      "sha256": "eeb9-1083-9e98-4740-5f32-a6c7-51d2-0370-934c-681a-8959-58c1-05d0-7987-3bd3-5013",
       "sources": [
         {
           "name": "pstack",
@@ -649,7 +649,7 @@
       "name": "principle-experience-first",
       "original_name": "principle-experience-first",
       "path": "skills/principle-experience-first",
-      "sha256": "3755ab3288a053dd3bf42f4851a605f8ab4a734ca37ac8345148bdff67fba511",
+      "sha256": "3755-ab32-88a0-53dd-3bf4-2f48-51a6-05f8-ab4a-734c-a37a-c834-5148-bdff-67fb-a511",
       "sources": [
         {
           "name": "pstack",
@@ -663,7 +663,7 @@
       "name": "principle-explain-the-number",
       "original_name": "principle-explain-the-number",
       "path": "skills/principle-explain-the-number",
-      "sha256": "0000a3e34badb21f104774780386e1b0b80671cff3697ae9ab599f771c2c43cb",
+      "sha256": "0000-a3e3-4bad-b21f-1047-7478-0386-e1b0-b806-71cf-f369-7ae9-ab59-9f77-1c2c-43cb",
       "sources": [
         {
           "name": "pstack",
@@ -677,7 +677,7 @@
       "name": "principle-fix-root-causes",
       "original_name": "principle-fix-root-causes",
       "path": "skills/principle-fix-root-causes",
-      "sha256": "86388a2a6a21e4834da03d9d0bb483465f40124f3b164b6070380d5e85f55957",
+      "sha256": "8638-8a2a-6a21-e483-4da0-3d9d-0bb4-8346-5f40-124f-3b16-4b60-7038-0d5e-85f5-5957",
       "sources": [
         {
           "name": "pstack",
@@ -691,7 +691,7 @@
       "name": "principle-foundational-thinking",
       "original_name": "principle-foundational-thinking",
       "path": "skills/principle-foundational-thinking",
-      "sha256": "1d23c9a69f71d4b49a77cff4f3460faf589a0822a44f163ddabbe70fc3815a79",
+      "sha256": "1d23-c9a6-9f71-d4b4-9a77-cff4-f346-0faf-589a-0822-a44f-163d-dabb-e70f-c381-5a79",
       "sources": [
         {
           "name": "pstack",
@@ -705,7 +705,7 @@
       "name": "principle-guard-the-context-window",
       "original_name": "principle-guard-the-context-window",
       "path": "skills/principle-guard-the-context-window",
-      "sha256": "6d3f22c0677acf3a5dd6b0dd7b9d61a0fbf5e52e21e75e1970f7990fd86c9afa",
+      "sha256": "6d3f-22c0-677a-cf3a-5dd6-b0dd-7b9d-61a0-fbf5-e52e-21e7-5e19-70f7-990f-d86c-9afa",
       "sources": [
         {
           "name": "pstack",
@@ -719,7 +719,7 @@
       "name": "principle-laziness-protocol",
       "original_name": "principle-laziness-protocol",
       "path": "skills/principle-laziness-protocol",
-      "sha256": "9c35100a4c9a1c36b9b9d69c4abcbef2bbb783132799b8fc1e5831c7b0bc7313",
+      "sha256": "9c35-100a-4c9a-1c36-b9b9-d69c-4abc-bef2-bbb7-8313-2799-b8fc-1e58-31c7-b0bc-7313",
       "sources": [
         {
           "name": "pstack",
@@ -733,7 +733,7 @@
       "name": "principle-make-operations-idempotent",
       "original_name": "principle-make-operations-idempotent",
       "path": "skills/principle-make-operations-idempotent",
-      "sha256": "47c79e3166f30c4d3bf26125c8ea529b127fc468ecf94809ab5aba1ebe79aed0",
+      "sha256": "47c7-9e31-66f3-0c4d-3bf2-6125-c8ea-529b-127f-c468-ecf9-4809-ab5a-ba1e-be79-aed0",
       "sources": [
         {
           "name": "pstack",
@@ -747,7 +747,7 @@
       "name": "principle-migrate-callers-then-delete-legacy-apis",
       "original_name": "principle-migrate-callers-then-delete-legacy-apis",
       "path": "skills/principle-migrate-callers-then-delete-legacy-apis",
-      "sha256": "b38b42c5a972a39c64795afb8eea1be5f7715f023f93cdf444b5f88af8f7f2fe",
+      "sha256": "b38b-42c5-a972-a39c-6479-5afb-8eea-1be5-f771-5f02-3f93-cdf4-44b5-f88a-f8f7-f2fe",
       "sources": [
         {
           "name": "pstack",
@@ -761,7 +761,7 @@
       "name": "principle-minimize-reader-load",
       "original_name": "principle-minimize-reader-load",
       "path": "skills/principle-minimize-reader-load",
-      "sha256": "b0b560e53f6a4b44a125437925dbe1202a000a20703cff3b8280e438b5cf95ac",
+      "sha256": "b0b5-60e5-3f6a-4b44-a125-4379-25db-e120-2a00-0a20-703c-ff3b-8280-e438-b5cf-95ac",
       "sources": [
         {
           "name": "pstack",
@@ -775,7 +775,7 @@
       "name": "principle-model-the-domain",
       "original_name": "principle-model-the-domain",
       "path": "skills/principle-model-the-domain",
-      "sha256": "c55ec4d5f4a15bfcef681feec8e924d4afcc91caf6cd2d83acc56e9cb43e71c1",
+      "sha256": "c55e-c4d5-f4a1-5bfc-ef68-1fee-c8e9-24d4-afcc-91ca-f6cd-2d83-acc5-6e9c-b43e-71c1",
       "sources": [
         {
           "name": "pstack",
@@ -789,7 +789,7 @@
       "name": "principle-never-block-on-the-human",
       "original_name": "principle-never-block-on-the-human",
       "path": "skills/principle-never-block-on-the-human",
-      "sha256": "7c81b7559df6cbe1594a6bac2433e063105b1ffa58676fae7c912a41a35852e1",
+      "sha256": "7c81-b755-9df6-cbe1-594a-6bac-2433-e063-105b-1ffa-5867-6fae-7c91-2a41-a358-52e1",
       "sources": [
         {
           "name": "pstack",
@@ -803,7 +803,7 @@
       "name": "principle-outcome-oriented-execution",
       "original_name": "principle-outcome-oriented-execution",
       "path": "skills/principle-outcome-oriented-execution",
-      "sha256": "234c15fa31f1184c078936e45b3097f5b917882eb877201de62003638626c571",
+      "sha256": "234c-15fa-31f1-184c-0789-36e4-5b30-97f5-b917-882e-b877-201d-e620-0363-8626-c571",
       "sources": [
         {
           "name": "pstack",
@@ -817,7 +817,7 @@
       "name": "principle-prove-it-works",
       "original_name": "principle-prove-it-works",
       "path": "skills/principle-prove-it-works",
-      "sha256": "e411e390703f8dfa987dc8a19ecde9b4dc14a623b5543d76f65b6c4a94bde1e1",
+      "sha256": "e411-e390-703f-8dfa-987d-c8a1-9ecd-e9b4-dc14-a623-b554-3d76-f65b-6c4a-94bd-e1e1",
       "sources": [
         {
           "name": "pstack",
@@ -831,7 +831,7 @@
       "name": "principle-redesign-from-first-principles",
       "original_name": "principle-redesign-from-first-principles",
       "path": "skills/principle-redesign-from-first-principles",
-      "sha256": "94567cfdc4cf35c3fb0eca0cbf4eb998eb6236b041d266a336768e79a757d2cd",
+      "sha256": "9456-7cfd-c4cf-35c3-fb0e-ca0c-bf4e-b998-eb62-36b0-41d2-66a3-3676-8e79-a757-d2cd",
       "sources": [
         {
           "name": "pstack",
@@ -845,7 +845,7 @@
       "name": "principle-separate-before-serializing-shared-state",
       "original_name": "principle-separate-before-serializing-shared-state",
       "path": "skills/principle-separate-before-serializing-shared-state",
-      "sha256": "d44b58f1b770b1855326864a5502ce8e627de278ac2f65edabea5aa1d14b5ba9",
+      "sha256": "d44b-58f1-b770-b185-5326-864a-5502-ce8e-627d-e278-ac2f-65ed-abea-5aa1-d14b-5ba9",
       "sources": [
         {
           "name": "pstack",
@@ -859,7 +859,7 @@
       "name": "principle-sequence-verifiable-units",
       "original_name": "principle-sequence-verifiable-units",
       "path": "skills/principle-sequence-verifiable-units",
-      "sha256": "d1719c7e3d8b4b9a2fd0a8561ca36a5d7c708f8d248b8b02dca664b59bfc74c4",
+      "sha256": "d171-9c7e-3d8b-4b9a-2fd0-a856-1ca3-6a5d-7c70-8f8d-248b-8b02-dca6-64b5-9bfc-74c4",
       "sources": [
         {
           "name": "pstack",
@@ -873,7 +873,7 @@
       "name": "principle-subtract-before-you-add",
       "original_name": "principle-subtract-before-you-add",
       "path": "skills/principle-subtract-before-you-add",
-      "sha256": "420ad76d27b8f376125bbc7827d69524ca79b6f98c709d40fed952590efddad8",
+      "sha256": "420a-d76d-27b8-f376-125b-bc78-27d6-9524-ca79-b6f9-8c70-9d40-fed9-5259-0efd-dad8",
       "sources": [
         {
           "name": "pstack",
@@ -887,7 +887,7 @@
       "name": "principle-test-behavior-not-implementation",
       "original_name": "principle-test-behavior-not-implementation",
       "path": "skills/principle-test-behavior-not-implementation",
-      "sha256": "c8b25ca3336056109d6eaf5a973e676945b389ab3d03a12ae8c8ba360869ee21",
+      "sha256": "c8b2-5ca3-3360-5610-9d6e-af5a-973e-6769-45b3-89ab-3d03-a12a-e8c8-ba36-0869-ee21",
       "sources": [
         {
           "name": "pstack",
@@ -901,7 +901,7 @@
       "name": "principle-type-system-discipline",
       "original_name": "principle-type-system-discipline",
       "path": "skills/principle-type-system-discipline",
-      "sha256": "098982c080f2fcdaf857ef2946a37eefe0ba01c4b7959d42b3910d611643d58f",
+      "sha256": "0989-82c0-80f2-fcda-f857-ef29-46a3-7eef-e0ba-01c4-b795-9d42-b391-0d61-1643-d58f",
       "sources": [
         {
           "name": "pstack",
@@ -915,7 +915,7 @@
       "name": "raccoon",
       "original_name": "raccoon",
       "path": "skills/raccoon",
-      "sha256": "c77c54722827b3ea6265e6377f92ee96fd00ade22a8cb2052e3524756b7ca8a9",
+      "sha256": "c77c-5472-2827-b3ea-6265-e637-7f92-ee96-fd00-ade2-2a8c-b205-2e35-2475-6b7c-a8a9",
       "sources": [
         {
           "name": "agents",
@@ -935,7 +935,7 @@
       "name": "recall",
       "original_name": "recall",
       "path": "skills/recall",
-      "sha256": "c3ad2f9c8a1cfb52e661bc692d391d924bddebfd2cb6b163f3c35f7f70d7a521",
+      "sha256": "c3ad-2f9c-8a1c-fb52-e661-bc69-2d39-1d92-4bdd-ebfd-2cb6-b163-f3c3-5f7f-70d7-a521",
       "sources": [
         {
           "name": "pstack",
@@ -949,7 +949,7 @@
       "name": "reflect",
       "original_name": "reflect",
       "path": "skills/reflect",
-      "sha256": "6e6f1de19593b453616cef690f4676612a4bbc837be1c7872f2616b589bf041d",
+      "sha256": "6e6f-1de1-9593-b453-616c-ef69-0f46-7661-2a4b-bc83-7be1-c787-2f26-16b5-89bf-041d",
       "sources": [
         {
           "name": "pstack",
@@ -963,7 +963,7 @@
       "name": "reproduce-and-fix-issues",
       "original_name": "reproduce-and-fix-issues",
       "path": "skills/reproduce-and-fix-issues",
-      "sha256": "a4bf696b5385e7848861d0ff5b3390c161c10c3b7f8800d8803f4832b5c7b60f",
+      "sha256": "a4bf-696b-5385-e784-8861-d0ff-5b33-90c1-61c1-0c3b-7f88-00d8-803f-4832-b5c7-b60f",
       "sources": [
         {
           "name": "pstack-benny",
@@ -977,7 +977,7 @@
       "name": "research-artifacts",
       "original_name": "research-artifacts",
       "path": "skills/research-artifacts",
-      "sha256": "81e152b215ae10735d945221728aba6fd648f2a962efa9bca432d33bca0fb3bc",
+      "sha256": "81e1-52b2-15ae-1073-5d94-5221-728a-ba6f-d648-f2a9-62ef-a9bc-a432-d33b-ca0f-b3bc",
       "sources": [
         {
           "name": "agents",
@@ -991,7 +991,7 @@
       "name": "setup-benny",
       "original_name": "setup-benny",
       "path": "skills/setup-benny",
-      "sha256": "f66f3fcd3055b26cc55e6c25557fe9ded0bcde5e3393e62a5e483aa9847af280",
+      "sha256": "f66f-3fcd-3055-b26c-c55e-6c25-557f-e9de-d0bc-de5e-3393-e62a-5e48-3aa9-847a-f280",
       "sources": [
         {
           "name": "pstack-benny",
@@ -1005,7 +1005,7 @@
       "name": "setup-pstack",
       "original_name": "setup-pstack",
       "path": "skills/setup-pstack",
-      "sha256": "7bea6512cefb90cda2ba8902884cb6851f78bfd2e0b716dbef0e6badcb3b82de",
+      "sha256": "7bea-6512-cefb-90cd-a2ba-8902-884c-b685-1f78-bfd2-e0b7-16db-ef0e-6bad-cb3b-82de",
       "sources": [
         {
           "name": "pstack",
@@ -1019,7 +1019,7 @@
       "name": "sharpen",
       "original_name": "sharpen",
       "path": "skills/sharpen",
-      "sha256": "06d7cc1950d1a9ac9a04405bc08a1e06bdaa6d415b1540a80ddf47e34cef8b28",
+      "sha256": "06d7-cc19-50d1-a9ac-9a04-405b-c08a-1e06-bdaa-6d41-5b15-40a8-0ddf-47e3-4cef-8b28",
       "sources": [
         {
           "name": "pstack",
@@ -1033,7 +1033,7 @@
       "name": "show-me-your-work",
       "original_name": "show-me-your-work",
       "path": "skills/show-me-your-work",
-      "sha256": "4054ff8b563c32006a582d184c9b305ede938d4ea45e18383202519343d1258e",
+      "sha256": "4054-ff8b-563c-3200-6a58-2d18-4c9b-305e-de93-8d4e-a45e-1838-3202-5193-43d1-258e",
       "sources": [
         {
           "name": "pstack",
@@ -1047,7 +1047,7 @@
       "name": "statechart",
       "original_name": "statechart",
       "path": "skills/statechart",
-      "sha256": "4f1b621d0240808df640e7344a49bdbe914191394df957d8c9b25cd1b86741a8",
+      "sha256": "e153-e81d-ced2-90c5-7376-1f88-b02b-4435-71fc-ba70-3b21-a5f6-0aba-9efa-b950-e904",
       "sources": [
         {
           "name": "pstack",
@@ -1061,7 +1061,7 @@
       "name": "swarm",
       "original_name": "swarm",
       "path": "skills/swarm",
-      "sha256": "896cda516c72f746377986d04a0873b15fba30cddc2a985371ba855e531a31e9",
+      "sha256": "896c-da51-6c72-f746-3779-86d0-4a08-73b1-5fba-30cd-dc2a-9853-71ba-855e-531a-31e9",
       "sources": [
         {
           "name": "pstack",
@@ -1075,7 +1075,7 @@
       "name": "tdd",
       "original_name": "tdd",
       "path": "skills/tdd",
-      "sha256": "5cb44876b687184a55d1e4355a830374ccd5e0e4c361d19e8f5928d3496704b1",
+      "sha256": "5cb4-4876-b687-184a-55d1-e435-5a83-0374-ccd5-e0e4-c361-d19e-8f59-28d3-4967-04b1",
       "sources": [
         {
           "name": "pstack",
@@ -1089,7 +1089,7 @@
       "name": "teach",
       "original_name": "teach",
       "path": "skills/teach",
-      "sha256": "26ac0702abb065f8808d81ceb51d869dc9e5f7b432372d8af284fca1f4e894e4",
+      "sha256": "26ac-0702-abb0-65f8-808d-81ce-b51d-869d-c9e5-f7b4-3237-2d8a-f284-fca1-f4e8-94e4",
       "sources": [
         {
           "name": "pstack",
@@ -1103,7 +1103,7 @@
       "name": "technical-writing",
       "original_name": "technical-writing",
       "path": "skills/technical-writing",
-      "sha256": "f726f6d06c9969cecafc57c7bda1cd189f10947c54807089f7d134fd10fda378",
+      "sha256": "f726-f6d0-6c99-69ce-cafc-57c7-bda1-cd18-9f10-947c-5480-7089-f7d1-34fd-10fd-a378",
       "sources": [
         {
           "name": "pstack",
@@ -1117,7 +1117,7 @@
       "name": "test-unit-review",
       "original_name": "test-unit-review",
       "path": "skills/test-unit-review",
-      "sha256": "9596fa041eaa5bfd9c820862f6c0f0a703e48c54c3209aa6bd83934f540cf1db",
+      "sha256": "9596-fa04-1eaa-5bfd-9c82-0862-f6c0-f0a7-03e4-8c54-c320-9aa6-bd83-934f-540c-f1db",
       "sources": [
         {
           "name": "claude",
@@ -1131,7 +1131,7 @@
       "name": "triage-issue-reports",
       "original_name": "triage-issue-reports",
       "path": "skills/triage-issue-reports",
-      "sha256": "d4e74992f50db8eb15a735584063be30bf32ca71e885c5c4451b5b86ca0f0213",
+      "sha256": "d4e7-4992-f50d-b8eb-15a7-3558-4063-be30-bf32-ca71-e885-c5c4-451b-5b86-ca0f-0213",
       "sources": [
         {
           "name": "pstack-benny",
@@ -1145,7 +1145,7 @@
       "name": "typescript-best-practices",
       "original_name": "typescript-best-practices",
       "path": "skills/typescript-best-practices",
-      "sha256": "650c4d7e3289cb72a3a9e49e2af0d28b0e04d3167eb8b782086fcdf10483b9fc",
+      "sha256": "650c-4d7e-3289-cb72-a3a9-e49e-2af0-d28b-0e04-d316-7eb8-b782-086f-cdf1-0483-b9fc",
       "sources": [
         {
           "name": "pstack",
@@ -1159,7 +1159,7 @@
       "name": "unslop",
       "original_name": "unslop",
       "path": "skills/unslop",
-      "sha256": "e7713c9212c094596766638b2faf63036b26cfa2fb485802eb9e954ffacde372",
+      "sha256": "e771-3c92-12c0-9459-6766-638b-2faf-6303-6b26-cfa2-fb48-5802-eb9e-954f-facd-e372",
       "sources": [
         {
           "name": "pstack",
@@ -1173,7 +1173,7 @@
       "name": "visual-note-refactor",
       "original_name": "visual-note-refactor",
       "path": "skills/visual-note-refactor",
-      "sha256": "da1e0860d68a3666a85275b8adb1e6825ce410da9c78c91360580060c4186e14",
+      "sha256": "da1e-0860-d68a-3666-a852-75b8-adb1-e682-5ce4-10da-9c78-c913-6058-0060-c418-6e14",
       "sources": [
         {
           "name": "tools-configs",
@@ -1193,7 +1193,7 @@
       "name": "why",
       "original_name": "why",
       "path": "skills/why",
-      "sha256": "cfb8fa61ba07f6848eace0bc3dace28539d337216d6fcf6d6d766958f5fde499",
+      "sha256": "cfb8-fa61-ba07-f684-8eac-e0bc-3dac-e285-39d3-3721-6d6f-cf6d-6d76-6958-f5fd-e499",
       "sources": [
         {
           "name": "pstack",
@@ -1207,7 +1207,7 @@
       "name": "wiki-config",
       "original_name": "wiki-config",
       "path": "skills/wiki-config",
-      "sha256": "aa81e4af96ef8210733bf0d1a2a8f6fc26b35a26c4ea092da26ae1daae718850",
+      "sha256": "aa81-e4af-96ef-8210-733b-f0d1-a2a8-f6fc-26b3-5a26-c4ea-092d-a26a-e1da-ae71-8850",
       "sources": [
         {
           "name": "agents",
@@ -1221,7 +1221,7 @@
       "name": "wiki-crystallize",
       "original_name": "wiki-crystallize",
       "path": "skills/wiki-crystallize",
-      "sha256": "3d51fa510cf5cc3ca6bdf91517303d0a5d43c3e1ee1d617c358b22edd5983e9c",
+      "sha256": "3d51-fa51-0cf5-cc3c-a6bd-f915-1730-3d0a-5d43-c3e1-ee1d-617c-358b-22ed-d598-3e9c",
       "sources": [
         {
           "name": "agents",
@@ -1235,7 +1235,7 @@
       "name": "wiki-ingest",
       "original_name": "wiki-ingest",
       "path": "skills/wiki-ingest",
-      "sha256": "a5cb6decc1d7295450773ad425fc4f52eb6aab3e5012eaad94a1894454a46443",
+      "sha256": "a5cb-6dec-c1d7-2954-5077-3ad4-25fc-4f52-eb6a-ab3e-5012-eaad-94a1-8944-54a4-6443",
       "sources": [
         {
           "name": "agents",
@@ -1249,7 +1249,7 @@
       "name": "wiki-integrate",
       "original_name": "wiki-integrate",
       "path": "skills/wiki-integrate",
-      "sha256": "27db8ea95a701c4f65fb0737fce39e615885273beae94a4b007cb76f64d4d531",
+      "sha256": "27db-8ea9-5a70-1c4f-65fb-0737-fce3-9e61-5885-273b-eae9-4a4b-007c-b76f-64d4-d531",
       "sources": [
         {
           "name": "agents",
@@ -1263,7 +1263,7 @@
       "name": "wiki-lint",
       "original_name": "wiki-lint",
       "path": "skills/wiki-lint",
-      "sha256": "a07cede0f62ed1f8a0890f5d31a3bc01f892c2bad073f6510bb775a0ab605b61",
+      "sha256": "a07c-ede0-f62e-d1f8-a089-0f5d-31a3-bc01-f892-c2ba-d073-f651-0bb7-75a0-ab60-5b61",
       "sources": [
         {
           "name": "agents",
@@ -1277,7 +1277,7 @@
       "name": "wiki-query",
       "original_name": "wiki-query",
       "path": "skills/wiki-query",
-      "sha256": "52b41681101798db864e98d195359cbbc35e056943c0ba366dd3bb8d1d1a4528",
+      "sha256": "52b4-1681-1017-98db-864e-98d1-9535-9cbb-c35e-0569-43c0-ba36-6dd3-bb8d-1d1a-4528",
       "sources": [
         {
           "name": "agents",
@@ -1291,7 +1291,7 @@
       "name": "youtube-explainer-email",
       "original_name": "youtube-explainer-email",
       "path": "skills/youtube-explainer-email",
-      "sha256": "11cf1a91da8e1bd6fc8ab3b1d7ca092b751ee7345048438916c1121cba3369ef",
+      "sha256": "11cf-1a91-da8e-1bd6-fc8a-b3b1-d7ca-092b-751e-e734-5048-4389-16c1-121c-ba33-69ef",
       "sources": [
         {
           "name": "tools-configs",
@@ -1317,7 +1317,7 @@
       "name": "zadania-mira-a4-current-task",
       "original_name": "zadania-mira-a4-current-task",
       "path": "skills/zadania-mira-a4-current-task",
-      "sha256": "787f3358def1d19bd88a45964ffaa765a766ce40fbf21dbf332e4b619b7bf68e",
+      "sha256": "787f-3358-def1-d19b-d88a-4596-4ffa-a765-a766-ce40-fbf2-1dbf-332e-4b61-9b7b-f68e",
       "sources": [
         {
           "name": "codex",

@@ -23,6 +23,9 @@ one copy and records every source in `catalog.json`. When content differs, both
 copies are retained. Later copies use a source-qualified directory name, such
 as `claude-statechart`.
 
+Catalog SHA-256 values are grouped in blocks of four hexadecimal characters for
+readability and compatibility with the repository's PII scanner.
+
 ## Imported sources
 
 - [`bajor/tools-configs`](https://github.com/bajor/tools-configs) at
