@@ -93,9 +93,9 @@ not introduce unnecessary abstractions or new dependencies to enforce a style.
 * Touch only what the request requires. Match the surrounding structure and style.
 * Do not refactor unrelated code or change adjacent comments and formatting.
 * Remove imports, variables, functions, files, and tests made unused by your changes.
-* Mention unrelated dead code when relevant; do not delete it without a request.
+* Remove dead code whenever you see it, but first check with grep that it is
+  unused everywhere except its own definition and tests.
 * Preserve unrelated user changes. Every changed line must trace to the task.
-* Do not create PR visual explanations unless the user explicitly requests them.
 
 ## 2. Writing Tests
 
