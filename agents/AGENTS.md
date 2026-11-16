@@ -102,25 +102,30 @@ not introduce unnecessary abstractions or new dependencies to enforce a style.
 Do not write excessive tests. Only add a test if its failure would tell you
 something is actually broken.
 
-* Prefer behavior-driven development (BDD): name and structure each test as an
-  observable behavior, using Given/When/Then where it clarifies the scenario.
-  Use Gherkin (`.feature` files or Given/When/Then test names) where the
-  repository's test tooling supports it or it makes intent clearer. It is not
-  mandatory boilerplate.
+* Prefer behavior-driven development (BDD): name each test for the behavior it
+  checks and structure it as Given/When/Then. Given/When/Then test names need no
+  tooling. Use Gherkin `.feature` files only when the repository already has a
+  runner for them, and never as mandatory boilerplate.
 * When a plan, specification, or acceptance criteria exist, derive behavioral
-  tests from them so the tests verify the intended behavior, not whatever the
-  code happens to do.
-* Test observable behavior and contracts through public interfaces and outcomes.
-  Prefer them over calling internal functions or asserting on mocks. Assertions
-  on styling values, colors, or internal structure fail on harmless changes and
-  pass on real bugs, so leave them out.
+  tests from each criterion not already covered, so the tests verify the intended
+  behavior, not whatever the code happens to do. Without one, state the intended
+  behavior from the request before writing the test.
+* Test observable behavior and contracts through public interfaces and outcomes,
+  not by calling internal functions or asserting on mocks of internal
+  collaborators. What an external boundary receives, such as a sent email or a
+  payment request, is observable behavior and may be asserted. Assertions on
+  styling values, colors, or internal structure fail on harmless changes and pass
+  on real bugs, so leave them out.
 * Choose unit, component, integration, or end-to-end tests according to the failure
   being checked. Do not add every test layer to every change.
 * Cover meaningful happy paths, failure paths, and edge cases without duplicating
   existing coverage or mirroring the implementation.
-* Keep tests readable, deterministic, and maintainable. Control time, randomness,
-  ordering, and network access so a test gives the same result on every run.
-* Follow the repository's existing test frameworks, layout, and naming conventions.
+* Keep tests readable and maintainable: name each test for the behavior and
+  expected outcome. In unit and component tests, control time, randomness, test
+  execution order, and network access so every run gives the same result. Tests
+  whose purpose is a real dependency, such as end-to-end tests, may use it.
+* Follow the repository's existing test frameworks, layout, and naming
+  conventions. They take precedence over the BDD naming above.
 * For a bug fix, add a focused regression test when it can reproduce the real failure.
 * For documentation or low-impact configuration changes, use relevant validation
   instead of inventing application tests.
