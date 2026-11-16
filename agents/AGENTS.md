@@ -102,13 +102,25 @@ not introduce unnecessary abstractions or new dependencies to enforce a style.
 Do not write excessive tests. Only add a test if its failure would tell you
 something is actually broken.
 
-* Test observable behavior and contracts. Assertions on styling values, colors,
-  or internal structure fail on harmless changes and pass on real bugs, so leave
-  them out.
+* Prefer behavior-driven development (BDD): name and structure each test as an
+  observable behavior, using Given/When/Then where it clarifies the scenario.
+  Use Gherkin (`.feature` files or Given/When/Then test names) where the
+  repository's test tooling supports it or it makes intent clearer. It is not
+  mandatory boilerplate.
+* When a plan, specification, or acceptance criteria exist, derive behavioral
+  tests from them so the tests verify the intended behavior, not whatever the
+  code happens to do.
+* Test observable behavior and contracts through public interfaces and outcomes.
+  Prefer them over calling internal functions or asserting on mocks. Assertions
+  on styling values, colors, or internal structure fail on harmless changes and
+  pass on real bugs, so leave them out.
 * Choose unit, component, integration, or end-to-end tests according to the failure
   being checked. Do not add every test layer to every change.
 * Cover meaningful happy paths, failure paths, and edge cases without duplicating
   existing coverage or mirroring the implementation.
+* Keep tests readable, deterministic, and maintainable. Control time, randomness,
+  ordering, and network access so a test gives the same result on every run.
+* Follow the repository's existing test frameworks, layout, and naming conventions.
 * For a bug fix, add a focused regression test when it can reproduce the real failure.
 * For documentation or low-impact configuration changes, use relevant validation
   instead of inventing application tests.
