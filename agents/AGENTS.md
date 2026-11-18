@@ -237,6 +237,27 @@ current requirements; a `ponytail` comment does not justify incorrect behavior.
 
 ## 7. Verification
 
+### Verification Skills Before Publication
+
+1. Before pushing or creating a PR or Entire trail change, discover all verification
+   skills applicable to the changed parts of the project. Include project-local
+   skills and skills created or modified by the current work; do not rely only on
+   the skills listed when the session started.
+2. Read and run every applicable verification skill against the final changes,
+   following its prerequisites and procedure. Record each skill, its scope, and
+   its result in the PR or trail description.
+3. Fix every issue those skills find, then rerun the affected skills and required
+   checks until no findings remain. If a skill cannot run or a finding cannot be
+   resolved, report the blocker and stop before publication. Do not mark an
+   unexecuted skill or unresolved finding as passing.
+4. Repeat discovery and affected verification after fixes or scope changes, so
+   newly applicable or newly created skills are not missed. Acceptance requires
+   every applicable verification skill to have run on the final relevant inputs
+   with no unresolved findings before publication, including updates to an
+   existing PR or trail change.
+
+### Required Checks
+
 1. Run the relevant existing checks before editing to establish a baseline.
 2. In code projects where hooks provide meaningful protection, use executable
    pre-commit and pre-push hooks that invoke maintained validation commands.
@@ -394,6 +415,8 @@ remain useful when automatic uploads are disabled.
 * [ ] Types enforce relevant invariants; source files respect the size limit.
 * [ ] Added tests detect real failures; relevant local checks and justified project
   hooks passed before pushing; documented remote-only checks remain enforced.
+* [ ] All verification skills applicable to the changed area, including newly
+  created or modified skills, ran before publication with no unresolved findings.
 * [ ] Writing is direct, unambiguous, and free of em-dashes.
 * [ ] Each PR fits the 15-minute comprehension budget; oversized changes are split
   into cohesive, independently understandable PRs.
