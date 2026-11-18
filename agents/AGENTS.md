@@ -237,27 +237,6 @@ current requirements; a `ponytail` comment does not justify incorrect behavior.
 
 ## 7. Verification
 
-### Verification Skills Before Publication
-
-1. Before pushing or creating a PR or Entire trail change, discover all verification
-   skills applicable to the changed parts of the project. Include project-local
-   skills and skills created or modified by the current work; do not rely only on
-   the skills listed when the session started.
-2. Read and run every applicable verification skill against the final changes,
-   following its prerequisites and procedure. Record each skill, its scope, and
-   its result in the PR or trail description.
-3. Fix every issue those skills find, then rerun the affected skills and required
-   checks until no findings remain. If a skill cannot run or a finding cannot be
-   resolved, report the blocker and stop before publication. Do not mark an
-   unexecuted skill or unresolved finding as passing.
-4. Repeat discovery and affected verification after fixes or scope changes, so
-   newly applicable or newly created skills are not missed. Acceptance requires
-   every applicable verification skill to have run on the final relevant inputs
-   with no unresolved findings before publication, including updates to an
-   existing PR or trail change.
-
-### Required Checks
-
 1. Run the relevant existing checks before editing to establish a baseline.
 2. In code projects where hooks provide meaningful protection, use executable
    pre-commit and pre-push hooks that invoke maintained validation commands.
@@ -291,6 +270,32 @@ current requirements; a `ponytail` comment does not justify incorrect behavior.
 7. Before reporting completion, review the actual diff and confirm the requested
    behavior works. Report a test or check as passing only when you ran it, and
    identify unavailable or remote-only checks explicitly.
+
+### Verification Skills Before Publication
+
+A verification skill is a skill whose stated purpose is to check correctness,
+safety, or compliance, including review and audit skills. It is applicable when
+its documented scope covers the changed area and type of change. Documentation
+changes require applicable documentation checks, not unrelated application checks.
+
+1. Before publishing a branch, PR, or Entire trail change, discover all applicable
+   verification skills, including project-local skills created or modified by the
+   current work. Do not rely only on the session's initial skill list. Inspect
+   skill instructions and commands before execution; do not expand permissions
+   or task scope to run them. A skill checking itself does not replace independent
+   review.
+2. Run every applicable skill against the final relevant inputs. Fix confirmed
+   in-scope issues. Dismiss false positives or unrelated findings only with
+   recorded evidence and rationale; report unrelated issues without changing them.
+   If a required skill cannot run or an in-scope issue cannot be fixed, report the
+   blocker and stop before publication.
+3. After fixes or scope changes, repeat discovery and rerun affected skills and
+   checks. Reuse results only for unchanged relevant inputs. Apply this gate to
+   updates to existing PRs and trail changes as well as initial publication.
+4. Keep the PR description or Entire trail description current with each skill's
+   scope, result, verified commit, and finding dispositions. For multi-change
+   trails, identify the repository and branch. Acceptance requires every
+   applicable skill to have run with no unresolved in-scope findings.
 
 ## 8. PRs and Commit Discipline
 
@@ -344,7 +349,8 @@ private profile.
    prompt.
 4. Before pushing, fetch `origin` and rebase onto `origin/main`. Resolve conflicts
    and rerun affected checks if the code changed. Apply section 7's relevant local
-   validation and applicable hooks before sending the branch to the remote.
+   validation, verification-skill publication gate, and applicable hooks before
+   sending the branch to the remote.
 5. Push the branch and create a PR immediately with a clear title, description,
    verification results, and a suggested reading order. For a series, state this
    PR's scope, dependencies, and remaining PRs.
