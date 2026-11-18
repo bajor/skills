@@ -277,6 +277,9 @@ A verification skill is a skill whose stated purpose is to check correctness,
 safety, or compliance, including review and audit skills. It is applicable when
 its documented scope covers the changed area and type of change. Documentation
 changes require applicable documentation checks, not unrelated application checks.
+Reviews that require a published PR or trail URL run after creation under section
+9 and must finish before merge. This exception does not defer skills that can run
+locally before publication.
 
 1. Before publishing a branch, PR, or Entire trail change, discover all applicable
    verification skills, including project-local skills created or modified by the
@@ -293,9 +296,13 @@ changes require applicable documentation checks, not unrelated application check
    checks. Reuse results only for unchanged relevant inputs. Apply this gate to
    updates to existing PRs and trail changes as well as initial publication.
 4. Keep the PR description or Entire trail description current with each skill's
-   scope, result, verified commit, and finding dispositions. For multi-change
-   trails, identify the repository and branch. Acceptance requires every
-   applicable skill to have run with no unresolved in-scope findings.
+   scope, result, verified source commit, and finding dispositions, including the
+   evidence and rationale for dismissals. For multi-change trails, identify the
+   repository and branch. After rebasing, record the new source commit and reuse
+   results only if relevant inputs are unchanged; otherwise rerun affected skills.
+   The recorded source commit identifies pre-merge verification, not the rewritten
+   merge commit. Acceptance requires every applicable skill to have run with no
+   unresolved in-scope findings, subject to the section 9 timing exception above.
 
 ## 8. PRs and Commit Discipline
 
@@ -422,7 +429,8 @@ remain useful when automatic uploads are disabled.
 * [ ] Added tests detect real failures; relevant local checks and justified project
   hooks passed before pushing; documented remote-only checks remain enforced.
 * [ ] All verification skills applicable to the changed area, including newly
-  created or modified skills, ran before publication with no unresolved findings.
+  created or modified skills, satisfied section 7's publication gate and section
+  9's post-publication review, with no unresolved in-scope findings.
 * [ ] Writing is direct, unambiguous, and free of em-dashes.
 * [ ] Each PR fits the 15-minute comprehension budget; oversized changes are split
   into cohesive, independently understandable PRs.
