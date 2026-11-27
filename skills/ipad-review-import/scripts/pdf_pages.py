@@ -30,7 +30,7 @@ def cmd_info(args):
     doc = pymupdf.open(args.pdf)
     annotations = []
     for page in doc:
-        for annot in page.annots() or []:
+        for annot in page.annots():
             annotations.append({
                 "page": page.number + 1,
                 "type": annot.type[1],
@@ -48,9 +48,14 @@ def parse_pages(spec, page_count):
         return range(1, page_count + 1)
     pages = set()
     for part in spec.split(","):
-        lo, _, hi = part.partition("-")
-        pages.update(range(int(lo), int(hi or lo) + 1))
-    return sorted(p for p in pages if 1 <= p <= page_count)
+        lo, dash, hi = part.partition("-")
+        start = int(lo) if lo else 1
+        end = int(hi) if hi else (page_count if dash else start)
+        pages.update(range(start, end + 1))
+    selected = sorted(p for p in pages if 1 <= p <= page_count)
+    if not selected:
+        sys.exit(f"--pages {spec!r} selects nothing in 1..{page_count}")
+    return selected
 
 
 def cmd_render(args):
@@ -66,14 +71,19 @@ def cmd_render(args):
 
 def cmd_diff(args):
     clean, annotated = pymupdf.open(args.clean), pymupdf.open(args.annotated)
+    shared = min(clean.page_count, annotated.page_count)
     changed = []
-    for number in range(1, min(clean.page_count, annotated.page_count) + 1):
+    for number in range(1, shared + 1):
         pixes = [d[number - 1].get_pixmap(dpi=DIFF_DPI)
                  for d in (clean, annotated)]
         if pixes[0].samples != pixes[1].samples:
             changed.append(number)
-    changed += list(range(clean.page_count + 1, annotated.page_count + 1))
-    print(json.dumps({"changed_pages": changed}))
+    # pages present on only one side (added or deleted) count as changed
+    changed += list(range(shared + 1,
+                          max(clean.page_count, annotated.page_count) + 1))
+    print(json.dumps({"changed_pages": changed,
+                      "clean_pages": clean.page_count,
+                      "annotated_pages": annotated.page_count}))
 
 
 def main():
