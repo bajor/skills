@@ -339,7 +339,7 @@
       "name": "ipad-review-export",
       "original_name": "ipad-review-export",
       "path": "skills/ipad-review-export",
-      "sha256": "a1ba-2f21-f54b-3e0a-22d1-538c-a5a8-a448-60a2-9b2f-66b4-5dcf-2d40-9fa3-0200-5abf",
+      "sha256": "aa6e-45ea-1374-b215-05b6-1f2e-1cdf-f00a-654b-20fd-cb0b-82d0-8ac8-faeb-87ba-aeef",
       "sources": [
         {
           "name": "skills",
@@ -353,7 +353,7 @@
       "name": "ipad-review-import",
       "original_name": "ipad-review-import",
       "path": "skills/ipad-review-import",
-      "sha256": "9299-e9c4-3022-8a32-40fb-c781-1745-2648-2901-c543-bcd5-6696-72d5-628f-5dca-0dca",
+      "sha256": "2075-ed63-70b1-f975-4a16-c6c4-4426-15cd-7711-071b-674a-3268-11aa-254d-c69d-3fda",
       "sources": [
         {
           "name": "skills",

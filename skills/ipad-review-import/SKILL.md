@@ -34,11 +34,16 @@ SCRATCH="$(mktemp -d)"                              # all temporary files go her
    Copy it into `$SCRATCH`; the copy forces iCloud to materialize the
    latest synced bytes. If the copy stalls or reads zero bytes, run
    `brctl download "$INBOX/<file>"`, wait a few seconds, and copy again.
-   Expected result: a local PDF larger than zero bytes. Failure: no PDFs in
-   `$INBOX`, tell the user nothing has arrived from the iPad yet and stop.
+   Several PDFs with none named by the user: a newer unannotated export can
+   outrank the annotated one, so run step 3 on each candidate, newest first,
+   and take the first that shows marks; when none does, ask the user which
+   file to process. Expected result: a local PDF larger than zero bytes.
+   Failure: no PDFs in `$INBOX`, tell the user nothing has arrived from the
+   iPad yet and stop.
 
-2. **Bootstrap the renderer once.** Actor: agent, Bash. Only if `$PY` is
-   missing:
+2. **Bootstrap the renderer once.** Actor: agent, Bash. Only if
+   `"$PY" -c 'import pymupdf'` fails (no venv yet, or a half-finished install
+   whose pip step died):
 
    ```bash
    python3 -m venv "$VENV" && "$VENV/bin/pip" -q install pymupdf
@@ -50,15 +55,16 @@ SCRATCH="$(mktemp -d)"                              # all temporary files go her
 
    ```bash
    "$PY" "$SKILL_DIR/scripts/pdf_pages.py" info "$SCRATCH/<file>.pdf"
-   "$PY" "$SKILL_DIR/scripts/pdf_pages.py" diff "$ARCHIVE/<file>.pdf" "$SCRATCH/<file>.pdf"
+   "$PY" "$SKILL_DIR/scripts/pdf_pages.py" diff "$ARCHIVE/<matching file>.pdf" "$SCRATCH/<file>.pdf"
    ```
 
    `info` prints page count and per-page annotation objects (Apple Markup
    stores Pencil strokes as ink annotations). `diff` pixel-compares against the
-   clean archived copy. The matching archive file is the one with the annotated
-   file's exact name; failing that, the archived name that is the longest
-   prefix of it (iCloud appends suffixes like " 2" to conflict copies). Skip
-   the diff when neither exists. Expected result: a set of marked pages.
+   clean archived copy. The matching archive file is the one whose name
+   without `.pdf` is the longest prefix of the annotated file's name without
+   `.pdf`; comparing stems is what matches iCloud conflict copies, which get
+   their suffix inserted before the extension, as in `plan 2.pdf`. Skip the
+   diff when nothing matches. Expected result: a set of marked pages.
    Failure: the script exits nonzero; read its stderr, it names the cause.
 
 4. **Rasterize and read.** Actor: agent, Bash then image reading:
@@ -67,24 +73,23 @@ SCRATCH="$(mktemp -d)"                              # all temporary files go her
    "$PY" "$SKILL_DIR/scripts/pdf_pages.py" render "$SCRATCH/<file>.pdf" "$SCRATCH/pages" --dpi 150
    ```
 
-   Read every rendered page image when the document has 12 pages or fewer;
-   otherwise read the marked pages from step 3 plus the first page. Some iPad
-   apps flatten ink into the page image, so an empty annotation list never
-   proves an unmarked document; the diff and your own eyes decide. For a mark
-   too small to read, re-render that page alone with `--dpi 300` and read it
-   again.
+   Read every rendered page image when the document has 12 pages or fewer.
+   For a longer document, render and read only the marked pages from step 3
+   plus the first page, by passing `--pages` (for example `--pages 1,17,23`)
+   instead of rasterizing everything. Some iPad apps flatten ink into the page
+   image, so an empty annotation list never proves an unmarked document; the
+   diff and your own eyes decide. For a mark too small to read, re-render that
+   page alone with `--dpi 300` and read it again.
 
 5. **Transcribe into findings.** Actor: agent. Produce a numbered list, one
    entry per visible mark; a single annotation object may hold several separate
    strokes, split them. Each entry: page number, the printed text the mark
    anchors to (quoted), the handwriting transcribed verbatim, and the
-   interpretation under this contract (the same legend printed on the PDF's
-   last page):
-   - Cross-out or ✗ over an item: reject or delete it.
-   - ✓ next to an item: approved as is.
-   - Underline or circle plus a margin note: change it as the note says.
-   - ? in the margin: explain, do not change.
-   - Writing inside a question's ruled space: the decision for that question.
+   interpretation. The interpretation contract is the legend
+   `ipad-review-export` prints on the document's own last page; read it off
+   the rendered page and apply it as written. A document with no legend: ask
+   the user what their marks mean instead of assuming a contract.
+   Two rules sit outside the printed legend.
    A bare underline, circle, or squiggle with no words near it is emphasis:
    record it in the report, change nothing, and raise no question about it
    unless it strikes text through. Transcribe uncertain words with best effort
