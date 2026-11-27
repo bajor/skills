@@ -25,7 +25,13 @@ copies are retained. Later copies use a source-qualified directory name, such
 as `claude-statechart`.
 
 Catalog SHA-256 values are grouped in blocks of four hexadecimal characters for
-readability and compatibility with the repository's PII scanner.
+readability and compatibility with the repository's PII scanner. Each value is
+one SHA-256 over the skill directory's files sorted by relative path, feeding
+per file: the relative path, a NUL byte, the file bytes, a NUL byte.
+
+Skills authored directly in this repository (such as `ipad-review-export` and
+`ipad-review-import`) record one source whose `origin` is this repository and
+whose `revision` is null.
 
 The `agents/` directory moved from `bajor/tools-configs`. It is maintained here
 separately from installable skills and is not part of the skill provenance catalog.
