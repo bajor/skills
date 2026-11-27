@@ -1,6 +1,6 @@
 ---
 name: ipad-review-export
-description: Use when the user wants a change summary, plan, review, or architecture write-up delivered as a clean printable PDF to read and annotate with an Apple Pencil on an iPad. Triggers include "send this to my iPad", "make a review PDF", "export the plan for markup", "PDF I can write on", or any request to hand work off for tablet reading. Concepts with structure are drawn as inline SVG figures. Pairs with ipad-review-import, which reads the annotated PDF back.
+description: Use when the user wants a change summary, plan, review, or architecture write-up delivered as a clean printable PDF to read and annotate with an Apple Pencil on an iPad. Triggers include "send this to my iPad", "make a review PDF", "export the plan for markup", "PDF I can write on", or any request to hand work off for tablet reading. Concepts with structure are drawn as inline SVG figures. Two registers: a 2 to 6 page change summary, and a deep dive that records each decision's constraints, trade-offs and cap headroom at the length that needs. Pairs with ipad-review-import, which reads the annotated PDF back.
 ---
 
 # ipad-review-export
@@ -45,12 +45,29 @@ NAME="$(date +%Y-%m-%d-%H%M)-<slug>"   # <slug>: short kebab-case topic
      matters.
    - Body: the decisions as numbered items with a bold lead sentence each,
      code excerpts only where a decision lives in the code, tables only for
-     enumerable comparisons. Target 2 to 6 pages.
+     enumerable comparisons.
+   - Depth: each decision records, in prose and in this order, (a) the
+     constraint that forces it: a platform rule, a measured number or an
+     owner requirement, named with its figure; (b) the trade-off: what the
+     choice gives up, and the strongest rejected alternative with the
+     reason it lost; (c) where a cap or budget exists: the cap, the measured
+     value against it, the remaining headroom, and the behavior when the cap
+     is hit. An item with none of these is context, not a decision; fold it
+     into the summary or drop it.
+   - Register and length: there is no page cap. A change summary stays as
+     brief as its decisions allow; when the user asks for depth (a deep
+     dive, "not deep enough", an architecture study), take every page the
+     constraints and trade-offs need. Depth never comes from restating at
+     more length; it comes from constraints, rejected alternatives, numbers
+     and their consequences.
    - Diagrams: every concept with structure (a flow, a topology, a lifecycle,
      a layering) is drawn as an inline SVG figure under the Diagrams rules
-     below. No ASCII-art diagram ships in the PDF.
-   - Final section "Questions for you": numbered, each one a single decidable
-     question followed by the template's ruled answer space.
+     below. No ASCII-art diagram ships in the PDF. In a deep dive, a cap
+     with measured pressure against it deserves a budget-bar figure showing
+     used against remaining.
+   - No closing questions section. A decision that waits on the reader is a
+     body item where it belongs, opening with a bold "Open, yours:" lead;
+     the reader answers it in the margin per the mark legend.
    Expected result: valid HTML file. Failure: none expected.
 
 3. **Print to PDF with headless Chrome.** Actor: agent, Bash:
@@ -146,8 +163,14 @@ statement of the mark contract. Keep it in every export, unchanged:
 
 ## Acceptance criteria
 
-- A PDF of at most 6 pages exists in `$INBOX` and in `$ARCHIVE` with the same
-  name.
+- A PDF exists in `$INBOX` and in `$ARCHIVE` with the same name, at the
+  length its register needs: brief for a change summary, exhaustive for a
+  requested deep dive, padded in neither.
+- Every numbered decision names its forcing constraint and its trade-off,
+  and every cap it touches appears with the measured value, the headroom and
+  the at-cap behavior.
+- Decisions that wait on the reader are marked "Open, yours:" in place; the
+  document ends with the body, not a questions section.
 - Every concept with structure is an inline SVG figure following the Diagrams
   rules; no ASCII-art diagram appears in the PDF.
 - The layout check of step 4 ran, including the SVG checks; pages it could
