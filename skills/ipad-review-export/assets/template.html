@@ -87,6 +87,32 @@
     padding: 0.5pt 3pt;
   }
   pre code { background: none; border: none; padding: 0; font-size: inherit; }
+  figure.diagram {
+    margin: 10pt 0 12pt;
+    break-inside: avoid-page;
+  }
+  figure.diagram svg { display: block; width: 100%; height: auto; }
+  figure.diagram figcaption {
+    font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 8pt;
+    color: var(--muted);
+    margin-top: 4pt;
+  }
+  svg .box  { fill: #ffffff; stroke: var(--ink); stroke-width: 1; }
+  svg .wash { fill: var(--wash); stroke: var(--rule); stroke-width: 1; }
+  svg .edge { fill: none; stroke: var(--ink); stroke-width: 1; }
+  svg .dashed { stroke-dasharray: 4 3; }
+  svg .boxlabel {
+    font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;
+    fill: var(--ink);
+  }
+  svg .edgelabel {
+    font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;
+    fill: var(--muted);
+  }
+  svg marker path { fill: var(--ink); }
   ol.points { padding-left: 1.3em; margin: 8pt 0; }
   ol.points > li { margin-bottom: 8pt; }
   ol.points > li > strong { letter-spacing: 0.005em; }
@@ -163,6 +189,27 @@ import {Alert} from 'react-native';</code></pre></li>
     <tr><th>Layer</th><th>Example</th><th>When</th></tr>
     <tr><td>Replace</td><td><code>Replace</code></td><td>Replace</td></tr>
   </table>
+
+  <!-- Diagrams: inline SVG per the skill's Diagrams rules. Minimal example;
+       marker ids must be unique per document (arrow-f1, arrow-f2, ...). -->
+  <figure class="diagram">
+    <svg viewBox="0 0 700 110" width="100%" role="img"
+         aria-label="Replace: what the diagram shows">
+      <defs>
+        <marker id="arrow-f1" viewBox="0 0 8 8" refX="7" refY="4"
+                markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M0 0 L8 4 L0 8 z"/>
+        </marker>
+      </defs>
+      <rect class="box" x="20" y="30" width="190" height="50" rx="6"/>
+      <text class="boxlabel" x="115" y="59" text-anchor="middle">Replace: source</text>
+      <path class="edge" d="M210 55 H 482" marker-end="url(#arrow-f1)"/>
+      <text class="edgelabel" x="348" y="47" text-anchor="middle">replace: what flows</text>
+      <rect class="box" x="490" y="30" width="190" height="50" rx="6"/>
+      <text class="boxlabel" x="585" y="59" text-anchor="middle">Replace: sink</text>
+    </svg>
+    <figcaption>Figure 1. Replace: one sentence naming what to see.</figcaption>
+  </figure>
 
   <h2>Questions for you</h2>
   <ol class="questions">

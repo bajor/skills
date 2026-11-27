@@ -1,6 +1,6 @@
 ---
 name: ipad-review-export
-description: Use when the user wants a change summary, plan, review, or architecture write-up delivered as a clean printable PDF to read and annotate with an Apple Pencil on an iPad. Triggers include "send this to my iPad", "make a review PDF", "export the plan for markup", "PDF I can write on", or any request to hand work off for tablet reading. Pairs with ipad-review-import, which reads the annotated PDF back.
+description: Use when the user wants a change summary, plan, review, or architecture write-up delivered as a clean printable PDF to read and annotate with an Apple Pencil on an iPad. Triggers include "send this to my iPad", "make a review PDF", "export the plan for markup", "PDF I can write on", or any request to hand work off for tablet reading. Concepts with structure are drawn as inline SVG figures. Pairs with ipad-review-import, which reads the annotated PDF back.
 ---
 
 # ipad-review-export
@@ -46,6 +46,9 @@ NAME="$(date +%Y-%m-%d-%H%M)-<slug>"   # <slug>: short kebab-case topic
    - Body: the decisions as numbered items with a bold lead sentence each,
      code excerpts only where a decision lives in the code, tables only for
      enumerable comparisons. Target 2 to 6 pages.
+   - Diagrams: every concept with structure (a flow, a topology, a lifecycle,
+     a layering) is drawn as an inline SVG figure under the Diagrams rules
+     below. No ASCII-art diagram ships in the PDF.
    - Final section "Questions for you": numbered, each one a single decidable
      question followed by the template's ruled answer space.
    Expected result: valid HTML file. Failure: none expected.
@@ -77,7 +80,9 @@ NAME="$(date +%Y-%m-%d-%H%M)-<slug>"   # <slug>: short kebab-case topic
    `$HOME/.cache/ipad-review/venv`, render the remaining pages with that
    skill's `scripts/pdf_pages.py render` and read them too. Expected result:
    on every checked page, no clipped text, no orphan heading at a page bottom,
-   code blocks intact. A page nothing could render goes unchecked; name it in
+   code blocks intact, and every SVG figure whole: no label clipped at the
+   viewBox edge, arrowheads present, the caption on the same page as its
+   figure. A page nothing could render goes unchecked; name it in
    the final message. Failure: fix the HTML and repeat steps 3 and 4 once.
 
 5. **Archive the clean copy.** Actor: agent, Bash:
@@ -103,6 +108,36 @@ NAME="$(date +%Y-%m-%d-%H%M)-<slug>"   # <slug>: short kebab-case topic
    directly on the page, tap Done. Markup saves into the same file and iCloud
    syncs it back; no export step is needed on the iPad.
 
+## Diagrams
+
+A concept with structure gets a drawn figure: data flows, process topologies,
+trust boundaries, lifecycles, gate layers. Draw it as inline SVG; vector lines
+stay crisp at any Pencil zoom, and the Markup ink lands on top cleanly. A
+diagram must still earn its place: when two plain sentences say it, keep the
+sentences.
+
+- Inline `<svg>` inside `<figure class="diagram">`, followed by a
+  `<figcaption>` that names what the reader should see. The template styles
+  both; `assets/template.html` carries a minimal example figure.
+- Give each `<svg>` a `viewBox` about 700 units wide and `width="100%"`.
+  At that scale a 12-unit label prints near 8 pt, the floor for legibility;
+  never draw text smaller. Keep every element inside the viewBox: Chrome
+  clips at its edge without warning.
+- Use only the template's SVG classes (`box`, `wash`, `edge`, `dashed`,
+  `boxlabel`, `edgelabel`) so figures inherit the document's inks. Add no
+  colors of your own, and never let color alone carry meaning: the page may
+  be printed or read in grayscale.
+- Arrowheads come from a `<marker>` defined in the figure's own `<defs>`,
+  with an id unique across the whole document (`arrow-f1`, `arrow-f2`, ...).
+  Duplicate marker ids across inline SVGs all resolve to the first one and
+  corrupt later figures.
+- When line styles differ in meaning (solid IPC against dashed consent-gated
+  transfer, say), add a small legend row inside the SVG, in `edgelabel` text.
+- Budget: a figure is at most half a page tall; the template's
+  `break-inside: avoid-page` keeps it on one page, so an over-tall figure
+  pushes a page break and wastes paper. Split an over-tall diagram into two
+  figures instead.
+
 ## Annotation contract
 
 The legend at the bottom of `assets/template.html` is the single authoritative
@@ -113,6 +148,8 @@ statement of the mark contract. Keep it in every export, unchanged:
 
 - A PDF of at most 6 pages exists in `$INBOX` and in `$ARCHIVE` with the same
   name.
-- The layout check of step 4 ran; pages it could not render are named in the
-  final message.
+- Every concept with structure is an inline SVG figure following the Diagrams
+  rules; no ASCII-art diagram appears in the PDF.
+- The layout check of step 4 ran, including the SVG checks; pages it could
+  not render are named in the final message.
 - The final message names the file and the iPad annotation steps.
